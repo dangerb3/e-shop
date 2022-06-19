@@ -43,7 +43,15 @@ textarea {
 }
 
 .container {
-    max-width: 1150px;
+    max-width: 1230px;
     width: 80%;
     margin: 0px auto;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        /* max-width: 960px; */
+        width: 95%;
+        margin: 0px auto;
+    }
 }
