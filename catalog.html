@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/header.css" />
     <link rel="stylesheet" href="style/hero.css" />
@@ -294,19 +295,165 @@
             </div>
             <div class="filter-width">
               <div class="ft">
-                <h6 class="filter-title">Ширина</h6>
+                <h6 class="filter-title no-marg">Ширина</h6>
                 <i class="fa fa-caret-down"></i>
               </div>
               <div class="filter-container">
+                <div class="amount-cont">
+                  <input type="text" id="amount-min" class="amount-input amount-min" value="" name="amount-min"> 
+                  <div class="amount-line"></div>
+                  <input type="text" id="amount-max" class="amount-input amount-max" value="" name="amount-max">
+                </div>
 
+                <div id="slider-range" class="sel"></div>
               </div>
 
             </div>
-            <div class="filter-long"></div>
-            <div class="filter-color"></div>
-            <div class="filter-colors"></div>
-            <div class="filter-sale"></div>
-            <div class="filter-in"></div>
+            <div class="filter-long">
+              <div class="ft">
+                <h6 class="filter-title no-marg">Длина</h6>
+                <i class="fa fa-caret-down"></i>
+              </div>
+              <div class="filter-container">
+                <div class="amount-cont">
+                  <input type="text" id="long-min" class="amount-input amount-min" value="" name="amount-min"> 
+                  <div class="amount-line"></div>
+                  <input type="text" id="long-max" class="amount-input amount-max" value="" name="amount-max">
+                </div>
+
+                <div id="slider-ranger" class="sel"></div>
+              </div>
+
+            </div>
+            <div class="filter-color">
+              <h6 class="filter-title no-marg">Цвет</h6>
+              <div class="color-container">
+                <div class="check-form2"  data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox2" id="color-1" name="color[]" value="Silver">
+                  <label for="color-1"></label>
+                </div>
+                <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox2" id="color-2" name="color[]" value="Black">
+                  <label for="color-2"></label>
+                </div>
+                <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox2" id="color-3" name="color[]" value="White">
+                  <label for="color-3"></label>
+                </div>
+                 <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox2" id="color-4" name="color[]" value="Yellow">
+                  <label for="color-4"></label>
+                </div>
+                 <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox2" id="color-5" name="color[]" value="Green">
+                  <label for="color-5"></label>
+                </div>
+                 <div class="check-form2" data-title="Cooper">
+                  <input type="checkbox" disabled class="custom-checkbox2" id="color-6" name="color[]" value="Cooper">
+                  <label for="color-6" ></label>
+                </div>
+                 <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox2" id="color-7" name="color[]" value="Brown">
+                  <label for="color-7"></label>
+                </div>
+                 <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox2" id="color-8" name="color[]" value="Grey">
+                  <label for="color-8"></label>
+                </div>
+                 <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox2" id="color-9" name="color[]" value="Silver">
+                  <label for="color-9"></label>
+                </div>
+              </div>
+
+            </div>
+            <div class="filter-colorsh">
+              <h6 class="filter-title no-marg">Цвет свечения</h6>
+              <div class="color-container bord-bott">
+                <div class="check-form2"  data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox2" id="color-11" name="colorsh[]" value="Silver">
+                  <label for="color-11"></label>
+                </div>
+                <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox2" id="color-21" name="colorsh[]" value="Black">
+                  <label for="color-21"></label>
+                </div>
+                <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox2" id="color-31" name="colorsh[]" value="White">
+                  <label for="color-31"></label>
+                </div>
+                 <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox2" id="color-41" name="colorsh[]" value="Yellow">
+                  <label for="color-41"></label>
+                </div>
+                 <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox2" id="color-51" name="colorsh[]" value="Green">
+                  <label for="color-51"></label>
+                </div>
+                 <div class="check-form2" data-title="Cooper">
+                  <input type="checkbox" disabled class="custom-checkbox2" id="color-61" name="colorsh[]" value="Cooper">
+                  <label for="color-61" ></label>
+                </div>
+                 <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox2" id="color-71" name="colorsh[]" value="Brown">
+                  <label for="color-71"></label>
+                </div>
+                 <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox2" id="color-81" name="colorsh[]" value="Grey">
+                  <label for="color-81"></label>
+                </div>
+              </div>
+              <div class="color-container">
+                <div class="check-form2"  data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox3" id="color-12" name="colorsh[]" value="Silver">
+                  <label for="color-12"></label>
+                </div>
+                <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox3" id="color-22" name="colorsh[]" value="Black">
+                  <label for="color-22"></label>
+                </div>
+                <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox3" id="color-32" name="colorsh[]" value="White">
+                  <label for="color-32"></label>
+                </div>
+                 <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox3" id="color-42" name="colorsh[]" value="Yellow">
+                  <label for="color-42"></label>
+                </div>
+                 <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox3" id="color-52" name="colorsh[]" value="Green">
+                  <label for="color-52"></label>
+                </div>
+                 <div class="check-form2" data-title="Cooper">
+                  <input type="checkbox" disabled class="custom-checkbox3" id="color-62" name="colorsh[]" value="Cooper">
+                  <label for="color-62" ></label>
+                </div>
+                 <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox3" id="color-72" name="colorsh[]" value="Brown">
+                  <label for="color-72"></label>
+                </div>
+                 <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox3" id="color-82" name="colorsh[]" value="Grey">
+                  <label for="color-82"></label>
+                </div>
+                <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox3" id="color-92" name="colorsh[]" value="Grey">
+                  <label for="color-92"></label>
+                </div>
+                <div class="check-form2" data-title="Brown">
+                  <input type="checkbox" class="custom-checkbox3" id="color-102" name="colorsh[]" value="Grey">
+                  <label for="color-102"></label>
+                </div>
+              </div>
+            </div>
+            <div class="filter-sale">
+              <h6 class="filter-title no-marg">Товары со скидкой</h6>
+              <input type="checkbox" name="sale" class="sale">
+            </div>
+            <div class="filter-in">
+                            <h6 class="filter-title no-marg">Только в наличии</h6>
+            <input type="checkbox" name="in" class="sale">
+            </div>
             <div class="filter-protect"></div>
             <button type="reset">Очистить</button>
           </form>
@@ -319,6 +466,7 @@
       </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
 
     <script src="js/search.js"></script>

@@ -41,3 +41,56 @@ for (j = 0; j < dropdown2.length; j++) {
     dropdownContent.classList.toggle("active");
   });
 }
+
+
+  $(function () {
+    var set_min = 3.5; 
+    var set_max = 410; 
+    $("#slider-range").slider({
+      range: true,
+      step: 0.1,
+      min: 3.5,
+      max: 410,
+      values: [set_min, set_max],
+      slide: function (event, ui) {
+        $("#amount-min").val(ui.values[0]);
+        $("#amount-max").val(ui.values[1]);
+      },
+    });
+    $("#amount-min").val(
+        $("#slider-range").slider("values", 0)
+        
+    );
+    $("#amount-max").val($("#slider-range").slider("values", 1))
+    $("#amount-min, #amount-min").change(function () {
+      
+      set_min = $("#amount-min").val();
+      set_max = $("#amount-max").val();
+      $("#slider-range").slider("values", 0, set_min);
+      $("#slider-range").slider("values", 1, set_max);
+    });
+
+var set_min2 = 3.5;
+var set_max2 = 410;
+$("#slider-ranger").slider({
+  range: true,
+  step: 0.1,
+  min: 3.5,
+  max: 410,
+  values: [set_min2, set_max2],
+  slide: function (event, ui) {
+    $("#long-min").val(ui.values[0]);
+    $("#long-max").val(ui.values[1]);
+  },
+});
+$("#long-min").val($("#slider-ranger").slider("values", 0));
+$("#long-max").val($("#slider-ranger").slider("values", 1));
+$("#long-min, #lonh-max").change(function () {
+  set_min2 = $("#long-min").val();
+  set_max2 = $("#long-max").val();
+  $("#slider-ranger").slider("values", 0, set_min2);
+  $("#slider-ranger").slider("values", 1, set_max2);
+});
+
+  });
+  
