@@ -1,0 +1,84 @@
+
+
+/* Стиль боковых навигационных ссылок и раскрывающейся кнопки */
+.dropdown-btn {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 28px;
+  letter-spacing: 0.3px;
+  color: #737B7D;
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.dropdown-btn>.breadcrumb-list__link2{
+  border-bottom: 1px dashed rgba(115, 123, 125, 0.5);
+}
+
+
+/* Выпадающий контейнер (по умолчанию скрыт). Необязательно: добавьте более светлый цвет фона и некоторые левые отступы, чтобы изменить дизайн выпадающего содержимого */
+.dropdown-container {
+  display: none;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 24px rgba(0, 67, 101, 0.08);
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  flex-direction: column;
+  padding-top: 2px;
+}
+.dropdown-container.active{
+  display: flex;
+}
+.dropdown-container a {
+  font-weight: 500;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+
+color: #737B7D;
+  padding: 2px 4px 2px 12px;
+  text-decoration: none;
+  display: block;
+}
+/* Необязательно: стиль курсора вниз значок */
+.fa-caret-down {
+  float: right;
+  padding-left: 4px;
+}
+.fa-caret-up {
+  float: right;
+  padding-left: 4px;
+}
+  
+.breadcrumb-list {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  list-style: none;
+}
+.breadcrumb-list__item {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 28px;
+  letter-spacing: 0.3px;
+  color: #737B7D;
+}
+.breadcrumb-list__item:not(:last-child)::after, .breadcrumb-list__item2:not(:last-child) .dropdown-btn::after {
+  content: "/";
+  margin-right: 4px;
+  margin-left: 4px;
+} 
+.breadcrumb-list__link {
+  text-decoration: none;
+  color: inherit;
+}
+.breadcrumb-list__link:not([disabled]):hover {
+  text-decoration: underline;
+}
