@@ -1,0 +1,39 @@
+.catalog{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.catalog-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  text-align: center;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+
+  color: #333333;
+}
+.catalog-item {
+  height: calc((100% - 30px) / 2) !important;
+  display: flex;
+  flex-direction: column;
+}
+.catalog-swiper {
+  width: 100%;
+  height: 422px;
+}
+.catalog-img{
+  height: 150px;
+  width: 100%;
+  margin-bottom: 12px;
+  filter: drop-shadow(0px 16px 28px rgba(51, 51, 51, 0.08));
+  border-radius: 10px;
+  overflow: hidden;
+}
+.catalog__img{
+  height: 100%;
+  width: 100%;
+
+}
