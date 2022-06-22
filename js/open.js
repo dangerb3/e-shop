@@ -3,7 +3,9 @@ let i;
 
 for (i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function () {
-    console.log(this)
+    document
+      .querySelectorAll(".breadcrumb-list .active")
+      .forEach((n) => n.classList.remove("active"));
     this.classList.toggle("active");
     var dropdownContent = this.nextElementSibling;
     console.log()

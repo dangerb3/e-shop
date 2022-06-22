@@ -272,7 +272,6 @@ color: rgba(115, 123, 125, 0.8);
   filter: drop-shadow(0px 4px 24px rgba(0, 67, 101, 0.08));
 border-radius: 10px;
 overflow: hidden;
-margin-right: 10px;
 margin-bottom: 24px;
 
 }
@@ -316,6 +315,7 @@ color: #999999;
 .news-swiper .swiper-wrapper{
   flex-wrap: wrap;
   width: 100%!important;
+  justify-content: space-between;
 }
 .news-swiper .new-item{
   padding: 0 10px 10px 10px;
