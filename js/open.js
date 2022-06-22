@@ -15,6 +15,7 @@ for (i = 0; i < dropdown.length; i++) {
 window.onclick = function (event) {
   if (
     !event.target.matches(".dropdown-btn") &&
+    !event.target.matches(".breadcrumb-list__link2") &&
     !event.target.matches(".breadcrumb-list__link2")
   ) {
     var dropdowns = document.getElementsByClassName("dropdown-container");
@@ -27,3 +28,16 @@ window.onclick = function (event) {
     }
   }
 };
+
+
+let dropdown2 = document.getElementsByClassName("dropdown-button");
+let j;
+
+for (j = 0; j < dropdown2.length; j++) {
+  dropdown2[j].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    console.log(dropdownContent);
+    dropdownContent.classList.toggle("active");
+  });
+}
