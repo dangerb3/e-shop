@@ -179,6 +179,14 @@
     justify-content: center;
 }
 
+.footer__info-payments {
+    display: flex;
+}
+
+.footer__info-links {
+    display: flex;
+}
+
 .footer__info-item {
     font-style: normal;
     font-family: 'Roboto';
@@ -197,12 +205,8 @@
 
 .footer__info-item:last-child {
     margin-left: 3vw;
-}
-
-.footer__info-item:last-child {
     display: flex;
     flex-direction: row;
-
 }
 
 .footer__info-item-text {}
