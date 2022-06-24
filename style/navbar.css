@@ -1,0 +1,51 @@
+.navbar-left {
+    margin-top: 35px;
+    width: 15%;
+    margin-right: 39px;
+}
+
+.navbar-left__list {}
+
+.navbar-left__list {}
+
+
+.navbar-left__item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+
+    color: #6B6B6B;
+    margin-bottom: 22px;
+}
+
+.navbar-left__item a {
+    color: #6B6B6B;
+
+}
+
+.navbar-bonus {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+
+    color: #E41434;
+    margin-left: 10px;
+}
+
+.navbar-left__item_active a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+
+    color: #333333;
+
+}

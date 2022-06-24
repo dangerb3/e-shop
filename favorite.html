@@ -16,11 +16,12 @@
 
 
     <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/breadcrumps.css">
+    <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/favorite-cart.css">
     <link rel="stylesheet" href="style/sales.css">
     <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/breadcrumps.css">
 
     <title>Arlight</title>
 </head>
@@ -143,8 +144,6 @@
     </header>
 
     <div class="page">
-
-
         <nav class="breadcrumb">
             <div class="container">
                 <ul class="breadcrumb-list">
@@ -190,303 +189,180 @@
             <!-- /.container -->
         </nav>
 
-        <div class="nav-back container"><a href="">Вернуться к покупкам</a></div>
+        <section class="favorite container">
+            <h1 class="favorite__title">Избранное <span class="favorite__count">31</span>
+            </h1>
+            <div class="favorite__content">
+                <nav class="navbar-left">
+                    <ul class='navbar-left__list'>
+                        <li class="navbar-left__item">
+                            <a href="">Мой профиль</a>
+                        </li>
+                        <li class="navbar-left__item">
+                            <a href="">Заказы / Счета</a>
+                        </li>
+                        <li class="navbar-left__item">
+                            <a href="">Бонусы<span class="navbar-bonus">1830 ₽</span></a>
+                        </li>
+                        <li class="navbar-left__item navbar-left__item_active">
+                            <a href="">Избранное</a>
+                        </li>
+                        <li class="navbar-left__item">
+                            <a href="">Настройки профиля</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="favorite__items">
+                    <div class="cart__list-item item-cart">
+                        <div class="item-cart__main">
+                            <img src="./img/cart/cart-item.png" alt="cart-item">
+                            <div class="item-cart__description description-cart">
+                                <div class="pi-header">
+                                    <div class="pi-h1">
+                                        <div class="id-item">023856</div>
+                                        <div class="status red">Под заказ</div>
+                                    </div>
+                                    <div class="pi-h2">
+                                        <div class="rating"><img src="/img/main-page/card/Star.svg" alt=""
+                                                class="star-icon">4.7</div>
+                                        <div class="reviews">289 отзывов</div>
+                                    </div>
 
-        <section class="cart container">
-            <h1 class="cart__title">Корзина</h1>
-            <div class="cart__wrapper">
-                <div class="cart__list">
-                    <div class="cart__list-header header-cart">
-                        <div class="header-cart__main">Товары</div>
-                        <div class="header-cart__second">
-                            <div class="header-cart__second-item ">Цена</div>
-                            <div class="header-cart__second-item">Количество</div>
-                            <div class="header-cart__second-item ">Сумма</div>
+                                </div>
+
+                                <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
+                            </div>
                         </div>
+                        <div class="item-cart__details details-item-cart">
+                            <div class="pi-price">
+                                <span class="price-active">40 566 ₽ </span>
+                                <div class="price-before">
+                                    <span class="price-start">47 999 </span>
+                                </div>
+                            </div>
+                            <div class="pi-cart">
+                                <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                            </div>
+                            <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div>
+                            <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
+
+                        </div>
+
+
                     </div>
-                    <div class="cart__list-header-divider"></div>
-                    <div class="cart__list-items">
-                        <div class="cart__list-item item-cart">
-                            <div class="item-cart__main">
-                                <img src="./img/cart/cart-item.png" alt="cart-item">
-                                <div class="item-cart__description description-cart">
-                                    <h3 class="desciption-cart__number">023856</h3>
-                                    <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
+                    <div class="cart__list-item item-cart">
+                        <div class="item-cart__main">
+                            <img src="./img/cart/cart-item.png" alt="cart-item">
+                            <div class="item-cart__description description-cart">
+                                <div class="pi-header">
+                                    <div class="pi-h1">
+                                        <div class="id-item">023856</div>
+                                        <div class="status red">Под заказ</div>
+                                    </div>
+                                    <div class="pi-h2">
+                                        <div class="rating"><img src="/img/main-page/card/Star.svg" alt=""
+                                                class="star-icon">4.7</div>
+                                        <div class="reviews">289 отзывов</div>
+                                    </div>
+
+                                </div>
+
+                                <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
+                            </div>
+                        </div>
+                        <div class="item-cart__details details-item-cart">
+                            <div class="pi-price">
+                                <span class="price-active">40 566 ₽ </span>
+                                <div class="price-before">
+                                    <span class="price-start">47 999 </span>
                                 </div>
                             </div>
-                            <div class="item-cart__details details-item-cart">
-                                <div class="details-item-cart__price ">40 566 ₽</div>
-                                <div class="details-item-cart__count ">
-                                    <div class="change-range">
-
-                                        <div class="pi-range d-flex">
-                                            <input type="button" class="buttonCountMinus" value="-">
-
-                                            <div class="buttonCountNumber">1</div>
-                                            <input type="button" class="buttonCountPlus" value="+">
-                                            <input type="hidden" class="buttonCountVal" value="0" id="num" name="num">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="details-item-cart__amount ">
-                                    40 566 ₽
-                                    <div class="pi-bonus">
-                                        <img src="/img/cart/bonus-icon.svg" alt="" class="bonus-img">
-                                        <span class="bonus-count">+270</span>
-                                        <span class="bonus-text">Бонусных рублей</span>
-                                    </div>
-                                </div>
-                                <!-- <button class="details-item-cart__favorite">s</button> -->
-                                <div class="pi-fav"><img src="/img/main-page/card/fav.svg" alt="" class="pi_icon"></div>
-                                <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
-
+                            <div class="pi-cart">
+                                <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
                             </div>
-
+                            <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div>
+                            <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
 
                         </div>
-                        <div class="cart__list-item item-cart">
-                            <div class="item-cart__main">
-                                <img src="./img/cart/cart-item.png" alt="cart-item">
-                                <div class="item-cart__description description-cart">
-                                    <h3 class="desciption-cart__number">023856</h3>
-                                    <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
-                                </div>
-                            </div>
-                            <div class="item-cart__details details-item-cart">
-                                <div class="details-item-cart__price ">40 566 ₽</div>
-                                <div class="details-item-cart__count ">
-                                    <div class="change-range">
-
-                                        <div class="pi-range d-flex">
-                                            <input type="button" class="buttonCountMinus" value="-">
-
-                                            <div class="buttonCountNumber">1</div>
-                                            <input type="button" class="buttonCountPlus" value="+">
-                                            <input type="hidden" class="buttonCountVal" value="0" id="num" name="num">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="details-item-cart__amount ">
-                                    40 566 ₽
-                                    <div class="pi-bonus">
-                                        <img src="/img/cart/bonus-icon.svg" alt="" class="bonus-img">
-                                        <span class="bonus-count">+270</span>
-                                        <span class="bonus-text">Бонусных рублей</span>
-                                    </div>
-                                </div>
-                                <!-- <button class="details-item-cart__favorite">s</button> -->
-                                <img class="details-item-cart__favorite" src="/img/cart/fav.svg" alt="like">
-                            </div>
 
 
-                        </div>
-                        <div class="cart__list-item item-cart">
-                            <div class="item-cart__main">
-                                <img src="./img/cart/cart-item.png" alt="cart-item">
-                                <div class="item-cart__description description-cart">
-                                    <h3 class="desciption-cart__number">023856</h3>
-                                    <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
-                                </div>
-                            </div>
-                            <div class="item-cart__details details-item-cart">
-                                <div class="details-item-cart__price ">40 566 ₽</div>
-                                <div class="details-item-cart__count ">
-                                    <div class="change-range">
-
-                                        <div class="pi-range d-flex">
-                                            <input type="button" class="buttonCountMinus" value="-">
-
-                                            <div class="buttonCountNumber">1</div>
-                                            <input type="button" class="buttonCountPlus" value="+">
-                                            <input type="hidden" class="buttonCountVal" value="0" id="num" name="num">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="details-item-cart__amount ">
-                                    40 566 ₽
-                                    <div class="pi-bonus">
-                                        <img src="/img/cart/bonus-icon.svg" alt="" class="bonus-img">
-                                        <span class="bonus-count">+270</span>
-                                        <span class="bonus-text">Бонусных рублей</span>
-                                    </div>
-                                </div>
-                                <!-- <button class="details-item-cart__favorite">s</button> -->
-                                <img class="details-item-cart__favorite" src="/img/cart/fav.svg" alt="like">
-                            </div>
-
-
-                        </div>
-                        <div class="cart__list-item item-cart">
-                            <div class="item-cart__main">
-                                <img src="./img/cart/cart-item.png" alt="cart-item">
-                                <div class="item-cart__description description-cart">
-                                    <h3 class="desciption-cart__number">023856</h3>
-                                    <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
-                                </div>
-                            </div>
-                            <div class="item-cart__details details-item-cart">
-                                <div class="details-item-cart__price ">40 566 ₽</div>
-                                <div class="details-item-cart__count ">
-                                    <div class="change-range">
-
-                                        <div class="pi-range d-flex">
-                                            <input type="button" class="buttonCountMinus" value="-">
-
-                                            <div class="buttonCountNumber">1</div>
-                                            <input type="button" class="buttonCountPlus" value="+">
-                                            <input type="hidden" class="buttonCountVal" value="0" id="num" name="num">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="details-item-cart__amount ">
-                                    40 566 ₽
-                                    <div class="pi-bonus">
-                                        <img src="/img/cart/bonus-icon.svg" alt="" class="bonus-img">
-                                        <span class="bonus-count">+270</span>
-                                        <span class="bonus-text">Бонусных рублей</span>
-                                    </div>
-                                </div>
-                                <!-- <button class="details-item-cart__favorite">s</button> -->
-                                <img class="details-item-cart__favorite" src="/img/cart/fav.svg" alt="like">
-                            </div>
-
-
-                        </div>
-                        <div class="cart__list-item item-cart">
-                            <div class="item-cart__main">
-                                <img src="./img/cart/cart-item.png" alt="cart-item">
-                                <div class="item-cart__description description-cart">
-                                    <h3 class="desciption-cart__number">023856</h3>
-                                    <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
-                                </div>
-                            </div>
-                            <div class="item-cart__details details-item-cart">
-                                <div class="details-item-cart__price ">40 566 ₽</div>
-                                <div class="details-item-cart__count ">
-                                    <div class="change-range">
-
-                                        <div class="pi-range d-flex">
-                                            <input type="button" class="buttonCountMinus" value="-">
-
-                                            <div class="buttonCountNumber">1</div>
-                                            <input type="button" class="buttonCountPlus" value="+">
-                                            <input type="hidden" class="buttonCountVal" value="0" id="num" name="num">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="details-item-cart__amount ">
-                                    40 566 ₽
-                                    <div class="pi-bonus">
-                                        <img src="/img/cart/bonus-icon.svg" alt="" class="bonus-img">
-                                        <span class="bonus-count">+270</span>
-                                        <span class="bonus-text">Бонусных рублей</span>
-                                    </div>
-                                </div>
-                                <!-- <button class="details-item-cart__favorite">s</button> -->
-                                <img class="details-item-cart__favorite" src="/img/cart/fav.svg" alt="like">
-                            </div>
-
-
-                        </div>
-                        <div class="cart__list-item item-cart">
-                            <div class="item-cart__main">
-                                <img src="./img/cart/cart-item.png" alt="cart-item">
-                                <div class="item-cart__description description-cart">
-                                    <h3 class="desciption-cart__number">023856</h3>
-                                    <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
-                                </div>
-                            </div>
-                            <div class="item-cart__details details-item-cart">
-                                <div class="details-item-cart__price ">40 566 ₽</div>
-                                <div class="details-item-cart__count ">
-                                    <div class="change-range">
-
-                                        <div class="pi-range d-flex">
-                                            <input type="button" class="buttonCountMinus" value="-">
-
-                                            <div class="buttonCountNumber">1</div>
-                                            <input type="button" class="buttonCountPlus" value="+">
-                                            <input type="hidden" class="buttonCountVal" value="0" id="num" name="num">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="details-item-cart__amount ">
-                                    40 566 ₽
-                                    <div class="pi-bonus">
-                                        <img src="/img/cart/bonus-icon.svg" alt="" class="bonus-img">
-                                        <span class="bonus-count">+270</span>
-                                        <span class="bonus-text">Бонусных рублей</span>
-                                    </div>
-                                </div>
-                                <!-- <button class="details-item-cart__favorite">s</button> -->
-                                <img class="details-item-cart__favorite" src="/img/cart/fav.svg" alt="like">
-                            </div>
-
-
-                        </div>
-                        <div class="cart__list-item item-cart">
-                            <div class="item-cart__main">
-                                <img src="./img/cart/cart-item.png" alt="cart-item">
-                                <div class="item-cart__description description-cart">
-                                    <h3 class="desciption-cart__number">023856</h3>
-                                    <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
-                                </div>
-                            </div>
-                            <div class="item-cart__details details-item-cart">
-                                <div class="details-item-cart__price ">40 566 ₽</div>
-                                <div class="details-item-cart__count ">
-                                    <div class="change-range">
-
-                                        <div class="pi-range d-flex">
-                                            <input type="button" class="buttonCountMinus" value="-">
-
-                                            <div class="buttonCountNumber">1</div>
-                                            <input type="button" class="buttonCountPlus" value="+">
-                                            <input type="hidden" class="buttonCountVal" value="0" id="num" name="num">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="details-item-cart__amount ">
-                                    40 566 ₽
-                                    <div class="pi-bonus">
-                                        <img src="/img/cart/bonus-icon.svg" alt="" class="bonus-img">
-                                        <span class="bonus-count">+270</span>
-                                        <span class="bonus-text">Бонусных рублей</span>
-                                    </div>
-                                </div>
-                                <!-- <button class="details-item-cart__favorite">s</button> -->
-                                <img class="details-item-cart__favorite" src="/img/cart/fav.svg" alt="like">
-                            </div>
-
-
-                        </div>
                     </div>
+                    <div class="cart__list-item item-cart">
+                        <div class="item-cart__main">
+                            <img src="./img/cart/cart-item.png" alt="cart-item">
+                            <div class="item-cart__description description-cart">
+                                <div class="pi-header">
+                                    <div class="pi-h1">
+                                        <div class="id-item">023856</div>
+                                        <div class="status red">Под заказ</div>
+                                    </div>
+                                    <div class="pi-h2">
+                                        <div class="rating"><img src="/img/main-page/card/Star.svg" alt=""
+                                                class="star-icon">4.7</div>
+                                        <div class="reviews">289 отзывов</div>
+                                    </div>
 
+                                </div>
+
+                                <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
+                            </div>
+                        </div>
+                        <div class="item-cart__details details-item-cart">
+                            <div class="pi-price">
+                                <span class="price-active">40 566 ₽ </span>
+                                <div class="price-before">
+                                    <span class="price-start">47 999 </span>
+                                </div>
+                            </div>
+                            <div class="pi-cart">
+                                <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                            </div>
+                            <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div>
+                            <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
+
+                        </div>
+
+
+                    </div>
+                    <div class="cart__list-item item-cart">
+                        <div class="item-cart__main">
+                            <img src="./img/cart/cart-item.png" alt="cart-item">
+                            <div class="item-cart__description description-cart">
+                                <div class="pi-header">
+                                    <div class="pi-h1">
+                                        <div class="id-item">023856</div>
+                                        <div class="status red">Под заказ</div>
+                                    </div>
+                                    <div class="pi-h2">
+                                        <div class="rating"><img src="/img/main-page/card/Star.svg" alt=""
+                                                class="star-icon">4.7</div>
+                                        <div class="reviews">289 отзывов</div>
+                                    </div>
+
+                                </div>
+
+                                <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
+                            </div>
+                        </div>
+                        <div class="item-cart__details details-item-cart">
+                            <div class="pi-price">
+                                <span class="price-active">40 566 ₽ </span>
+                                <div class="price-before">
+                                    <span class="price-start">47 999 </span>
+                                </div>
+                            </div>
+                            <div class="pi-cart">
+                                <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                            </div>
+                            <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div>
+                            <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
+
+                        </div>
+
+
+                    </div>
                 </div>
-                <div class="cart__info">
-                    <div class="cart__info-about-cart">
-                        <h2>В корзине</h2>
-                        <h3>1 товар</h3>
-                        <input type="text" placeholder="Промокод" class="cart__info-input">
-                        <input type="text" placeholder="Использовать бонусы" class="cart__info-input">
-                        <h4>У вас есть 476 бонусных рублей</h4>
-                        <div class="details-item-cart__price ">40 566 ₽</div>
-                        <button class="submit-button_red">Перейти к оформлению</button>
-                        <button class="submit-button_white">быстрый заказ</button>
-                        <div class="pi-bonus">
-                            <img src="/img/cart/bonus-icon.svg" alt="" class="bonus-img">
-                            <span class="bonus-text_black">Вы получите +270 бонусных
-                                рублей</span>
-                        </div>
-                    </div>
-                    <div class="cart__info-about-buttons">
-                        <div> <button class="submit-button_gray">Добавить в избранное</button>
-                        </div>
-                        <div> <button class="submit-button_gray">Очистить корзину</button>
-                        </div>
-                    </div>
 
-                </div>
             </div>
         </section>
     </div>
