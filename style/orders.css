@@ -1,0 +1,247 @@
+.orders-items {
+    width: 100%;
+}
+
+.orders-header {
+    display: flex;
+
+    justify-content: space-between;
+    position: relative;
+}
+
+.orders-search {
+    border-bottom: 1px solid #E5E5E5;
+    width: 691px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.orders-header::after {
+    background-image: url('/img/orders/search-icon.svg');
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    content: '';
+    position: absolute;
+    left: 660px;
+}
+
+.orders-checkbox {
+    border-radius: 4px;
+    background-color: #737B7D;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.order-checkbox-box {
+    display: flex;
+    align-items: center;
+}
+
+.orders-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: 0.3px;
+
+    color: #999999;
+}
+
+.orders-accordion__item {}
+
+.orders-accordion__header {
+    width: 100%;
+    padding: 15px 20px 15px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.orders-accordion__header::before {
+    /* flex-shrink: 0; */
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    /* margin-left: auto; */
+    background-image: url('/img/orders/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    top: 22px;
+    left: 18px;
+    cursor: pointer;
+}
+
+.orders-accordion__item_show .orders-accordion__header::before {
+    transform: rotate(-180deg);
+}
+
+.orders-accordion__header:hover {}
+
+.orders-accordion__item_hidden .orders-accordion__header {}
+
+.orders-accordion__body {}
+
+.orders-accordion__item:not(.orders-accordion__item_show) .orders-accordion__body {
+    display: none;
+}
+
+.item-cart__main {
+    padding: 12px 20px 11px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-body__info-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+
+}
+
+.date-black {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #333333;
+
+}
+
+.bonuses-red {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height, or 140% */
+
+
+    color: #E74C3C;
+}
+
+.order-body__info-received,
+.order-body__info-bonuses {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #737B7D;
+
+}
+
+.order-body__info-bonuses {
+    margin-top: 8px;
+}
+
+.order-title__black {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    /* identical to box height, or 110% */
+    margin-right: 10px;
+
+
+    color: #333333;
+
+}
+
+.order-title__gray {
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+
+    color: #999999;
+}
+
+.item-cart__description {}
+
+.description-cart {}
+
+.pi-header {}
+
+.pi-h1 {}
+
+.id-item {}
+
+.desciption-cart__name {}
+
+.details-item-cart__count {}
+
+.details-item-cart__price {}
+
+.order-body__count,
+.details-item-cart__count {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    /* identical to box height, or 145% */
+
+
+    color: #333333;
+}
+
+.order-body__total,
+.details-item-cart__price {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 0.3px;
+
+    color: #333333;
+}
+
+.order-body__total-status {
+    background: #E74C3C;
+    border-radius: 5px;
+    padding: 0px 4px;
+    gap: 15px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 18px;
+    /* identical to box height, or 200% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13px;
+
+}
+
+.item-cart__header {
+    display: flex;
+
+}
+
+.item-cart__description {
+    margin-left: 20px;
+}
+
+.details-item-cart__price {
+    margin-right: 0px !important;
+
+}

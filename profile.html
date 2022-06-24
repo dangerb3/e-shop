@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/breadcrumps.css">
     <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/orders.css">
+    <link rel="stylesheet" href="style/profile.css">
+
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/favorite-cart.css">
     <link rel="stylesheet" href="style/sales.css">
@@ -190,21 +193,21 @@
         </nav>
 
         <section class="favorite container">
-            <h1 class="favorite__title">Избранное <span class="favorite__count">31</span>
+            <h1 class="favorite__title">Профиль
             </h1>
             <div class="favorite__content">
                 <nav class="navbar-left">
                     <ul class='navbar-left__list'>
-                        <li class="navbar-left__item">
+                        <li class="navbar-left__item navbar-left__item_active">
                             <a href="profile.html">Мой профиль</a>
                         </li>
-                        <li class="navbar-left__item">
+                        <li class="navbar-left__item ">
                             <a href="orders.html">Заказы / Счета</a>
                         </li>
-                        <li class="navbar-left__item">
+                        <li class="navbar-left__item ">
                             <a href="">Бонусы<span class="navbar-bonus">1830 ₽</span></a>
                         </li>
-                        <li class="navbar-left__item navbar-left__item_active">
+                        <li class="navbar-left__item">
                             <a href="favorite.html">Избранное</a>
                         </li>
                         <li class="navbar-left__item">
@@ -212,159 +215,62 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="favorite__items">
-                    <div class="cart__list-item item-cart">
-                        <div class="item-cart__main">
-                            <img src="./img/cart/cart-item.png" alt="cart-item">
-                            <div class="item-cart__description description-cart">
-                                <div class="pi-header">
-                                    <div class="pi-h1">
-                                        <div class="id-item">023856</div>
-                                        <div class="status red">Под заказ</div>
-                                    </div>
-                                    <div class="pi-h2">
-                                        <div class="rating"><img src="/img/main-page/card/Star.svg" alt=""
-                                                class="star-icon">4.7</div>
-                                        <div class="reviews">289 отзывов</div>
-                                    </div>
-
-                                </div>
-
-                                <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
+                <div class="profile">
+                    <div class="profile__about">
+                        <div class="profile__name">Вадим Акатов</div>
+                        <div class="profile__divider"></div>
+                        <div class="profile__details">
+                            <div class="left-column">
+                                <div class="profile-text">E-mail</div>
+                                <div class="profile-text">Телефон</div>
+                                <div class="profile-text">Город</div>
+                                <div class="profile-text">Адрес</div>
                             </div>
+                            <div class="right-column">
+                                <div class="profile-text_black">a****mail.ru</div>
+                                <div class="profile-text_black">+7 (919) *** ** 45</div>
+                                <div class="profile-text_black">Москва</div>
+                                <div class="profile-text_black">ул. Космонавта Волкова д.29 к.1</div>
+                            </div>
+                            <div class="profile-email"></div>
                         </div>
-                        <div class="item-cart__details details-item-cart">
-                            <div class="pi-price">
-                                <span class="price-active">40 566 ₽ </span>
-                                <div class="price-before">
-                                    <span class="price-start">47 999 </span>
-                                </div>
-                            </div>
-                            <div class="pi-cart">
-                                <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
-                            </div>
-                            <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div>
-                            <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
-
-                        </div>
-
 
                     </div>
-                    <div class="cart__list-item item-cart">
-                        <div class="item-cart__main">
-                            <img src="./img/cart/cart-item.png" alt="cart-item">
-                            <div class="item-cart__description description-cart">
-                                <div class="pi-header">
-                                    <div class="pi-h1">
-                                        <div class="id-item">023856</div>
-                                        <div class="status red">Под заказ</div>
-                                    </div>
-                                    <div class="pi-h2">
-                                        <div class="rating"><img src="/img/main-page/card/Star.svg" alt=""
-                                                class="star-icon">4.7</div>
-                                        <div class="reviews">289 отзывов</div>
-                                    </div>
-
-                                </div>
-
-                                <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
+                    <div class="profile__history">
+                        <h1 class="history__title">1830 ₽</h1>
+                        <div class="history__body">
+                            <div class="left-column">
+                                <div class="profile-text_black">+28</div>
+                                <div class="profile-text_black">+145</div>
+                                <div class="profile-text_black">+26</div>
+                            </div>
+                            <div class="right-column">
+                                <div class="profile-text">20 февраля, Светодиодные ленты SMD 3528, узкие 5 мм, 4.8
+                                    W/метр, открытые RT 12V 60</div>
+                                <div class="profile-text">20 февраля, Светодиодные ленты SMD 3528, узкие 5 мм, 4.8
+                                    W/метр, открытые RT 12V 60</div>
+                                <div class="profile-text">20 февраля, Светодиодные ленты SMD 3528, узкие 5 мм, 4.8
+                                    W/метр, открытые RT 12V 60</div>
                             </div>
                         </div>
-                        <div class="item-cart__details details-item-cart">
-                            <div class="pi-price">
-                                <span class="price-active">40 566 ₽ </span>
-                                <div class="price-before">
-                                    <span class="price-start">47 999 </span>
-                                </div>
+                        <h1 class="history__title">Бонусы скоро сгорят</h1>
+                        <div class="history__body">
+                            <div class="left-column">
+                                <div class="profile-text_black">-300</div>
+                                <div class="profile-text_black">-152</div>
                             </div>
-                            <div class="pi-cart">
-                                <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
-                            </div>
-                            <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div>
-                            <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
-
-                        </div>
-
-
-                    </div>
-                    <div class="cart__list-item item-cart">
-                        <div class="item-cart__main">
-                            <img src="./img/cart/cart-item.png" alt="cart-item">
-                            <div class="item-cart__description description-cart">
-                                <div class="pi-header">
-                                    <div class="pi-h1">
-                                        <div class="id-item">023856</div>
-                                        <div class="status red">Под заказ</div>
-                                    </div>
-                                    <div class="pi-h2">
-                                        <div class="rating"><img src="/img/main-page/card/Star.svg" alt=""
-                                                class="star-icon">4.7</div>
-                                        <div class="reviews">289 отзывов</div>
-                                    </div>
-
-                                </div>
-
-                                <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
+                            <div class="right-column">
+                                <div class="profile-text">9 января, через 10 месяцев</div>
+                                <div class="profile-text">18 января, через 10 месяцев</div>
                             </div>
                         </div>
-                        <div class="item-cart__details details-item-cart">
-                            <div class="pi-price">
-                                <span class="price-active">40 566 ₽ </span>
-                                <div class="price-before">
-                                    <span class="price-start">47 999 </span>
-                                </div>
-                            </div>
-                            <div class="pi-cart">
-                                <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
-                            </div>
-                            <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div>
-                            <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
-
-                        </div>
-
-
-                    </div>
-                    <div class="cart__list-item item-cart">
-                        <div class="item-cart__main">
-                            <img src="./img/cart/cart-item.png" alt="cart-item">
-                            <div class="item-cart__description description-cart">
-                                <div class="pi-header">
-                                    <div class="pi-h1">
-                                        <div class="id-item">023856</div>
-                                        <div class="status red">Под заказ</div>
-                                    </div>
-                                    <div class="pi-h2">
-                                        <div class="rating"><img src="/img/main-page/card/Star.svg" alt=""
-                                                class="star-icon">4.7</div>
-                                        <div class="reviews">289 отзывов</div>
-                                    </div>
-
-                                </div>
-
-                                <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
-                            </div>
-                        </div>
-                        <div class="item-cart__details details-item-cart">
-                            <div class="pi-price">
-                                <span class="price-active">40 566 ₽ </span>
-                                <div class="price-before">
-                                    <span class="price-start">47 999 </span>
-                                </div>
-                            </div>
-                            <div class="pi-cart">
-                                <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
-                            </div>
-                            <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div>
-                            <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
-
-                        </div>
-
-
                     </div>
                 </div>
 
             </div>
-        </section>
+    </div>
+    </div>
+    </section>
     </div>
 
     <footer class="footer">
@@ -516,10 +422,9 @@
             <!-- </div> -->
         </div>
     </footer>
-    <script src="js/accordion.js"></script>
     <script src="js/calculate.js"></script>
     <script src="js/open.js"></script>
-
+    <script src="js/accordion.js"></script>
 </body>
 
 </html>

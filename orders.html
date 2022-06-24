@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/breadcrumps.css">
     <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/orders.css">
+
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/favorite-cart.css">
     <link rel="stylesheet" href="style/sales.css">
@@ -190,7 +192,7 @@
         </nav>
 
         <section class="favorite container">
-            <h1 class="favorite__title">Избранное <span class="favorite__count">31</span>
+            <h1 class="favorite__title">Заказы
             </h1>
             <div class="favorite__content">
                 <nav class="navbar-left">
@@ -198,13 +200,13 @@
                         <li class="navbar-left__item">
                             <a href="profile.html">Мой профиль</a>
                         </li>
-                        <li class="navbar-left__item">
+                        <li class="navbar-left__item  navbar-left__item_active">
                             <a href="orders.html">Заказы / Счета</a>
                         </li>
-                        <li class="navbar-left__item">
+                        <li class="navbar-left__item ">
                             <a href="">Бонусы<span class="navbar-bonus">1830 ₽</span></a>
                         </li>
-                        <li class="navbar-left__item navbar-left__item_active">
+                        <li class="navbar-left__item">
                             <a href="favorite.html">Избранное</a>
                         </li>
                         <li class="navbar-left__item">
@@ -212,154 +214,137 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="favorite__items">
-                    <div class="cart__list-item item-cart">
-                        <div class="item-cart__main">
-                            <img src="./img/cart/cart-item.png" alt="cart-item">
-                            <div class="item-cart__description description-cart">
-                                <div class="pi-header">
-                                    <div class="pi-h1">
-                                        <div class="id-item">023856</div>
-                                        <div class="status red">Под заказ</div>
-                                    </div>
-                                    <div class="pi-h2">
-                                        <div class="rating"><img src="/img/main-page/card/Star.svg" alt=""
-                                                class="star-icon">4.7</div>
-                                        <div class="reviews">289 отзывов</div>
-                                    </div>
-
-                                </div>
-
-                                <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
-                            </div>
-                        </div>
-                        <div class="item-cart__details details-item-cart">
-                            <div class="pi-price">
-                                <span class="price-active">40 566 ₽ </span>
-                                <div class="price-before">
-                                    <span class="price-start">47 999 </span>
-                                </div>
-                            </div>
-                            <div class="pi-cart">
-                                <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
-                            </div>
-                            <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div>
-                            <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
-
+                <div class="orders-items">
+                    <div class="orders-header">
+                        <input class="orders-search" type="text" placeholder="Поиск по заказам">
+                        <div class="order-checkbox-box"> <input class="orders-checkbox" type="checkbox" id="open"
+                                name="Развернуть все заказы">
+                            <label for="open" class="orders-text">Развернуть все заказы</label>
                         </div>
 
 
+                        <!-- <h3 class='orders-text'>Развернуть все заказы</h3> -->
                     </div>
-                    <div class="cart__list-item item-cart">
-                        <div class="item-cart__main">
-                            <img src="./img/cart/cart-item.png" alt="cart-item">
-                            <div class="item-cart__description description-cart">
-                                <div class="pi-header">
-                                    <div class="pi-h1">
-                                        <div class="id-item">023856</div>
-                                        <div class="status red">Под заказ</div>
+                    <div class="orders-body">
+                        <div class="orders-accordion">
+                            <div class="orders-accordion__item orders-accordion__item_show">
+                                <div class="orders-accordion__header">
+                                    <div class="order-body__info">
+                                        <div class="order-body__info-header">
+                                            <h1 class="order-title__black">Заказ 023856</h1>
+                                            <h2 class="order-title__gray">от 26 января</h2>
+                                        </div>
+                                        <div class="order-body__info-received">Заказ получен <span class="date-black">28
+                                                января</span></div>
+                                        <div class="order-body__info-bonuses">Бонусы: <span class="bonuses-red">+270
+                                                ₽</span></div>
+
                                     </div>
-                                    <div class="pi-h2">
-                                        <div class="rating"><img src="/img/main-page/card/Star.svg" alt=""
-                                                class="star-icon">4.7</div>
-                                        <div class="reviews">289 отзывов</div>
-                                    </div>
-
-                                </div>
-
-                                <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
-                            </div>
-                        </div>
-                        <div class="item-cart__details details-item-cart">
-                            <div class="pi-price">
-                                <span class="price-active">40 566 ₽ </span>
-                                <div class="price-before">
-                                    <span class="price-start">47 999 </span>
-                                </div>
-                            </div>
-                            <div class="pi-cart">
-                                <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
-                            </div>
-                            <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div>
-                            <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
-
-                        </div>
-
-
-                    </div>
-                    <div class="cart__list-item item-cart">
-                        <div class="item-cart__main">
-                            <img src="./img/cart/cart-item.png" alt="cart-item">
-                            <div class="item-cart__description description-cart">
-                                <div class="pi-header">
-                                    <div class="pi-h1">
-                                        <div class="id-item">023856</div>
-                                        <div class="status red">Под заказ</div>
-                                    </div>
-                                    <div class="pi-h2">
-                                        <div class="rating"><img src="/img/main-page/card/Star.svg" alt=""
-                                                class="star-icon">4.7</div>
-                                        <div class="reviews">289 отзывов</div>
+                                    <div class="order-body__count">1 товар</div>
+                                    <div class="order-body__total">40 566 ₽
+                                        <div class="order-body__total-status">Завершен</div>
                                     </div>
 
                                 </div>
+                                <div class="orders-accordion__body">
+                                    <div class="item-cart__main">
+                                        <div class="item-cart__header">
+                                            <img src="./img/cart/cart-item.png" alt="cart-item">
+                                            <div class="item-cart__description description-cart">
+                                                <div class="pi-header">
+                                                    <div class="pi-h1">
+                                                        <div class="id-item">023856</div>
+                                                    </div>
+                                                </div>
+                                                <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
+                                            </div>
 
-                                <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
-                            </div>
-                        </div>
-                        <div class="item-cart__details details-item-cart">
-                            <div class="pi-price">
-                                <span class="price-active">40 566 ₽ </span>
-                                <div class="price-before">
-                                    <span class="price-start">47 999 </span>
-                                </div>
-                            </div>
-                            <div class="pi-cart">
-                                <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
-                            </div>
-                            <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div>
-                            <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
-
-                        </div>
-
-
-                    </div>
-                    <div class="cart__list-item item-cart">
-                        <div class="item-cart__main">
-                            <img src="./img/cart/cart-item.png" alt="cart-item">
-                            <div class="item-cart__description description-cart">
-                                <div class="pi-header">
-                                    <div class="pi-h1">
-                                        <div class="id-item">023856</div>
-                                        <div class="status red">Под заказ</div>
+                                        </div>
+                                        <div class="details-item-cart__count ">1 шт
+                                        </div>
+                                        <div class="details-item-cart__price ">40 566 ₽</div>
                                     </div>
-                                    <div class="pi-h2">
-                                        <div class="rating"><img src="/img/main-page/card/Star.svg" alt=""
-                                                class="star-icon">4.7</div>
-                                        <div class="reviews">289 отзывов</div>
+                                </div>
+                            </div>
+                            <div class="orders-accordion__item">
+                                <div class="orders-accordion__header">
+                                    <div class="order-body__info">
+                                        <div class="order-body__info-header">
+                                            <h1 class="order-title__black">Заказ 023856</h1>
+                                            <h2 class="order-title__gray">от 26 января</h2>
+                                        </div>
+                                        <div class="order-body__info-received">Заказ получен <span class="date-black">28
+                                                января</span></div>
+                                        <div class="order-body__info-bonuses">Бонусы: <span class="bonuses-red">+270
+                                                ₽</span></div>
+
+                                    </div>
+                                    <div class="order-body__count">1 товар</div>
+                                    <div class="order-body__total">40 566 ₽
+                                        <div class="order-body__total-status">Завершен</div>
                                     </div>
 
                                 </div>
+                                <div class="orders-accordion__body">
+                                    <div class="item-cart__main">
+                                        <div class="item-cart__header">
+                                            <img src="./img/cart/cart-item.png" alt="cart-item">
+                                            <div class="item-cart__description description-cart">
+                                                <div class="pi-header">
+                                                    <div class="pi-h1">
+                                                        <div class="id-item">023856</div>
+                                                    </div>
+                                                </div>
+                                                <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
+                                            </div>
 
-                                <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
-                            </div>
-                        </div>
-                        <div class="item-cart__details details-item-cart">
-                            <div class="pi-price">
-                                <span class="price-active">40 566 ₽ </span>
-                                <div class="price-before">
-                                    <span class="price-start">47 999 </span>
+                                        </div>
+                                        <div class="details-item-cart__count ">1 шт
+                                        </div>
+                                        <div class="details-item-cart__price ">40 566 ₽</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="pi-cart">
-                                <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                            <div class="orders-accordion__item">
+                                <div class="orders-accordion__header">
+                                    <div class="order-body__info">
+                                        <div class="order-body__info-header">
+                                            <h1 class="order-title__black">Заказ 023856</h1>
+                                            <h2 class="order-title__gray">от 26 января</h2>
+                                        </div>
+                                        <div class="order-body__info-received">Заказ получен <span class="date-black">28
+                                                января</span></div>
+                                        <div class="order-body__info-bonuses">Бонусы: <span class="bonuses-red">+270
+                                                ₽</span></div>
+
+                                    </div>
+                                    <div class="order-body__count">1 товар</div>
+                                    <div class="order-body__total">40 566 ₽
+                                        <div class="order-body__total-status">Завершен</div>
+                                    </div>
+
+                                </div>
+                                <div class="orders-accordion__body">
+                                    <div class="item-cart__main">
+                                        <div class="item-cart__header">
+                                            <img src="./img/cart/cart-item.png" alt="cart-item">
+                                            <div class="item-cart__description description-cart">
+                                                <div class="pi-header">
+                                                    <div class="pi-h1">
+                                                        <div class="id-item">023856</div>
+                                                    </div>
+                                                </div>
+                                                <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
+                                            </div>
+
+                                        </div>
+                                        <div class="details-item-cart__count ">1 шт
+                                        </div>
+                                        <div class="details-item-cart__price ">40 566 ₽</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div>
-                            <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
-
                         </div>
-
-
                     </div>
                 </div>
 
@@ -516,10 +501,9 @@
             <!-- </div> -->
         </div>
     </footer>
-    <script src="js/accordion.js"></script>
     <script src="js/calculate.js"></script>
     <script src="js/open.js"></script>
-
+    <script src="js/accordion.js"></script>
 </body>
 
 </html>
