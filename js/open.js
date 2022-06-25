@@ -18,7 +18,7 @@ window.onclick = function (event) {
     !event.target.matches(".breadcrumb-list__link2") &&
     !event.target.matches(".breadcrumb-list__link2")
   ) {
-    var dropdowns = document.getElementsByClassName("dropdown-container");
+    var dropdowns = document.getElementsByClassName("dropdown-container2");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
@@ -38,7 +38,7 @@ for (j = 0; j < dropdown2.length; j++) {
     this.classList.toggle("active");
     var dropdownContent = this.nextElementSibling;
     console.log(dropdownContent);
-    dropdownContent.classList.toggle("active");
+    if (dropdownContent) dropdownContent.classList.toggle("active");
   });
 }
 
