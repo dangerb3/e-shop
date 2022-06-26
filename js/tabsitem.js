@@ -1,25 +1,33 @@
 var tabNavs = document.querySelectorAll(".inf-tit");
-var tabPanes = document.querySelectorAll(".tab-pane");
+
 
 console.log(tabNavs);
 for (var u = 0; u < tabNavs.length; u++) {
   tabNavs[u].addEventListener("click", function (e) {
     e.preventDefault();
+    let pn=e.currentTarget.parentNode.parentNode.parentNode;
+    var tabPanes = pn.querySelectorAll(".tab-pane");
+    console.log(tabPanes);
+    var tp = pn.querySelectorAll(".inf-tit");
     var activeTabAttr = e.currentTarget.getAttribute("data-tab");
     console.log(e.currentTarget);
-    for (var j = 0; j < tabNavs.length; j++) {
+    for (var j = 0; j < tp.length; j++) {
       var contentAttr = tabPanes[j].getAttribute("data-tab-content");
-console.log(contentAttr);
+      console.log(contentAttr);
       if (activeTabAttr === contentAttr) {
-        tabNavs[j].classList.toggle("active");
+        tp[j].classList.toggle("active");
         tabPanes[j].classList.toggle("active");
       } else {
-        tabNavs[j].classList.remove("active");
+        tp[j].classList.remove("active");
         tabPanes[j].classList.remove("active");
       }
     }
   });
 }
+
+
+
+
 const chk = document.getElementById("chk");
 
 chk.addEventListener("change", () => {
