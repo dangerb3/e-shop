@@ -18,8 +18,7 @@
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/breadcrumps.css">
     <link rel="stylesheet" href="style/navbar.css">
-    <link rel="stylesheet" href="style/orders.css">
-    <link rel="stylesheet" href="style/profile-setting.css">
+    <link rel="stylesheet" href="style/delivery.css">
 
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/favorite-cart.css">
@@ -192,91 +191,97 @@
             <!-- /.container -->
         </nav>
 
-        <section class="favorite container">
-            <h1 class="favorite__title">Настройки профиля
+        <section class="delivery">
+            <h1 class="favorite__title  container">Доставка
             </h1>
-            <div class="favorite__content">
-                <nav class="navbar-left">
-                    <ul class='navbar-left__list'>
-                        <li class="navbar-left__item navbar-left__item_active">
-                            <a href="profile.html">Мой профиль</a>
-                        </li>
-                        <li class="navbar-left__item ">
-                            <a href="orders.html">Заказы / Счета</a>
-                        </li>
-                        <li class="navbar-left__item ">
-                            <a href="">Бонусы<span class="navbar-bonus">1830 ₽</span></a>
-                        </li>
-                        <li class="navbar-left__item">
-                            <a href="favorite.html">Избранное</a>
-                        </li>
-                        <li class="navbar-left__item">
-                            <a href="">Настройки профиля</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="profile-setting">
-                    <form action="#" type="submit" value="Submit">
-
-                        <div class="profile-data">
-                            <h1 class="profile-title">
-                                Личные данные
-                            </h1>
-                            <label for="name">Имя</label>
-                            <input type="text" id="username" class="profile-input" value="Дарья">
-                            <label for="last-name">Фамилия</label>
-                            <input type="text" id="last-name" class="profile-input">
-                            <label for="checkbox-area">Пол</label>
-                            <div class="checkbox-area">
-                                <input type="radio" id="male" name="gender" value="male">
-                                <label for="male">Мужской</label><br>
-                                <input type="radio" id="female" name="gender" value="female">
-                                <label for="female">Женский</label><br>
-                            </div>
-                            <label for="city">Город</label>
-                            <input type="text" id="city" class="profile-input">
-                            <label for="address">Адрес</label>
-                            <input type="text" id="address" class="profile-input">
+            <section class="content">
+                <div class="content__item ">
+                    <div class="container">
+                        <h2 class="content__title">Москва | Московская область</h2>
+                        <div class="content__body">
+                            Компания располагает собственным фирменным автопарком и командой водителей-курьеров, которые
+                            оперативно и профессионально осуществляют доставку заказов по Москве и Московской области.
+                            <br><br>
+                            Доставка оплаченных заказов осуществляется через 1-3 рабочих дня после подтверждения заказа.
+                            <br><br>
+                            Есди въезд на территорию платный, необходимо заказать пропуск для фирменного автомобиля или
+                            компенсировать данную стоимость. В противном случае курьер сможет доставить товар только до
+                            КПП.
+                            <br><br>
+                            <strong>Важно!</strong> При приеме заказа необходимо проверить полноту комплектации и
+                            убедиться
+                            в
+                            отсутствии
+                            механических повреждений.
                         </div>
+                    </div>
 
-                        <div class="personal-data">
-                            <h1 class="profile-title">
-                                Учетная запись
-                            </h1>
-                            <div class="row">
-                                <div>
-                                    <label for="email">E-mail</label>
-                                    <input type="email" id="email" class="profile-input_hide" value="a*****”mail.ru"
-                                        readonly>
-                                </div>
-                                <a class="profile-button" id="emailLink" ">Изменить</a>
-                            </div>
-                            <div class=" row">
-                                    <div>
-                                        <label for="number">Телефон</label>
-                                        <input type="tel" id="number" class="profile-input_hide"
-                                            value="+7 (919) *** ** 45" readonly>
-                                    </div>
-                                    <a class="profile-button" id="telLink">Изменить</a>
-                            </div>
-                            <div class="row">
-                                <div>
-                                    <label for="password">Пароль</label>
-                                    <input type="password" id="password" class="profile-input_hide" value="12345678"
-                                        readonly>
-                                </div>
-                                <a class="profile-button" id="passwordLink">Изменить</a>
-                            </div>
-
-                        </div>
-                        <button class="white-button">Сохранить</button>
-                    </form>
                 </div>
+                <div class="content__item ">
+                    <div class="container">
+                        <h2 class="content__title ">Стоимость</h2>
+                        <div class="content__body">
+                            Доставка по Москве - от 1 000 рублей.
+                            Доставка по Московской области - от 3 000 рублей.
+                            <br>
+                            <small> *Итоговая стоимость доставки рассчитывается менеджером.
+                            </small>
+                            <br><br>
+                            Бесплатная доставка по Москве до терминалов Деловые линии и ПЭК.
+                        </div>
+                    </div>
 
-            </div>
-    </div>
-    </div>
-    </section>
+                </div>
+                <div class="content__item">
+                    <div class="container">
+                        <h2 class="content__title">График доставок</h2>
+                        <div class="content__body">
+                            пн-пт: 10.00-21.00 <br><br>
+                            сб-вс: выходной <br><br>
+                            Возможна доставка и выходные дни, но необходимо предварительное согласование по телефону с
+                            менеджером.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content__item">
+                    <div class="container">
+                        <h2 class="content__title">Самовывоз</h2>
+                        <div class="content__body">
+                            Самовывоз осуществляется с центрального склада по адресу: Москва, ул. солнечногорская, 4
+                            стр. 13
+                            <br><br>
+                            График работы<br>
+                            пн-пт: 9.00-19.00 <br>
+                            сб-вс: выходной
+                            <br><br>
+                            Возможна отгрузка и выходные дни, но необходимо предварительное согласование по телефону с
+                            менеджером.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content__item">
+                    <div class="container">
+                        <h2 class="content__title">Россия</h2>
+                        <div class="content__body">
+                            Быстрая доставка по всей России транспортными компаниями: Деловые линии, СДЭК, DPD и другие.
+                            Доставляем бесплатно до терминалов транспортной компании в Москве благодаря собственной
+                            фирменной доставке. Вы оплачиваете только услуги транспортной компании. Вся продукция
+                            поставляется в надежной фирменой упаковке, что гарантирует её целостность при получении.
+                            <br><br>
+                            Доставка компаниями: Деловые линии, СДЭК, DPD и другие.
+                            <br><br>
+                            - Бесплатно до терминалов Москвы<br>
+                            - Услуги транспортной компании оплачиваются при получении<br>
+                            - Стоимость зависит от габаритов, веса и расстояния<br>
+                            - Уточнить стоимость доставки транспортной компании можно на их сайте<br>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
     </div>
 
     <footer class="footer">
@@ -429,7 +434,7 @@
         </div>
     </footer>
     <script src="js/calculate.js"></script>
-    <script src="js/profile-setting.js"></script>
+
     <script src="js/open.js"></script>
     <script src="js/accordion.js"></script>
 </body>
