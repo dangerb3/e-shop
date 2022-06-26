@@ -261,12 +261,35 @@
             <li class="catalog-item">
               <a href="#" class="catalog__link">Управление светом</a>
             </li>
+            <li class="catalog-item">
+              <a href="#" class="catalog__link">Алюминиевые профили</a>
+            </li>
+            <li class="catalog-item">
+              <a href="#" class="catalog__link">Светодиодные светильники</a>
+            </li>
+            <li class="catalog-item">
+              <a href="#" class="catalog__link">Наружное освещение</a>
+            </li>
+            <li class="catalog-item">
+              <a href="#" class="catalog__link">Светодиодный декор</a>
+            </li>
+            <li class="catalog-item">
+              <a href="#" class="catalog__link">Кабельная продукция</a>
+            </li>
+            <li class="catalog-item">
+              <a href="#" class="catalog__link">
+            Светодиоды и модули</a>
+            </li>
           </ul>
         </div>
         <div class="filter">
           <form action="#" class="filter-form">
             <div class="filter-type">
-              <h6 class="filter-title">Тип товара</h6>
+              <div class="ft">
+                <h6 class="filter-title no-marg pl-0">Тип товара</h6>
+                <i class="fa fa-angle-up"></i>
+              </div>
+              
               <div class="filter-container">
                 <div class="check-form">
                   <input type="checkbox" class="custom-checkbox" id="type-1" name="type[]" value="Лента">
@@ -297,7 +320,7 @@
             <div class="filter-width">
               <div class="ft">
                 <h6 class="filter-title no-marg">Ширина</h6>
-                <i class="fa fa-caret-down"></i>
+                <i class="fa fa-angle-up"></i>
               </div>
               <div class="filter-container">
                 <div class="amount-cont">
@@ -313,7 +336,7 @@
             <div class="filter-long">
               <div class="ft">
                 <h6 class="filter-title no-marg">Длина</h6>
-                <i class="fa fa-caret-down"></i>
+                <i class="fa fa-angle-up"></i>
               </div>
               <div class="filter-container">
                 <div class="amount-cont">
@@ -327,8 +350,11 @@
 
             </div>
             <div class="filter-color">
-              <h6 class="filter-title no-marg">Цвет</h6>
-              <div class="color-container">
+              <div class="ft pr">              
+                <h6 class="filter-title no-marg">Цвет</h6>
+              <i class="fa fa-angle-up"></i></div>
+                <div class="filter-container">
+                                <div class="color-container">
                 <div class="check-form2"  data-title="Brown">
                   <input type="checkbox" class="custom-checkbox2" id="color-1" name="color[]" value="Silver">
                   <label for="color-1"></label>
@@ -366,11 +392,17 @@
                   <label for="color-9"></label>
                 </div>
               </div>
+                </div>
+
 
             </div>
             <div class="filter-colorsh">
-              <h6 class="filter-title no-marg">Цвет свечения</h6>
-              <div class="color-container bord-bott">
+              <div class="ft pr">
+                <h6 class="filter-title no-marg">Цвет свечения</h6>
+                <i class="fa fa-angle-up"></i>
+              </div>
+              <div class="filter-container">
+                              <div class="color-container bord-bott">
                 <div class="check-form2"  data-title="Brown">
                   <input type="checkbox" class="custom-checkbox2" id="color-11" name="colorsh[]" value="Silver">
                   <label for="color-11"></label>
@@ -446,6 +478,8 @@
                   <label for="color-102"></label>
                 </div>
               </div>
+              </div>
+
             </div>
             <div class="filter-sale">
               <h6 class="filter-title no-marg">Товары со скидкой</h6>
@@ -455,13 +489,1743 @@
                             <h6 class="filter-title no-marg">Только в наличии</h6>
             <input type="checkbox" name="in" class="sale">
             </div>
-            <div class="filter-protect"></div>
-            <button type="reset">Очистить</button>
+            <div class="filter-type filter-type-second">
+              <div class="ft ft-second">
+                <h6 class="filter-title no-marg pl-0">Тип товара</h6>
+                <i class="fa fa-angle-up"></i>
+              </div>
+              
+              <div class="filter-container filter-max">
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-1" name="type[]" value="Лента">
+                  <label for="type-1">Лента</label>
+                </div>
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-2" name="type[]" value="Линейка">
+                  <label for="type-2">Линейка</label>
+                </div>
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-3" name="type[]" value="Заглушка">
+                  <label for="type-3">Заглушка</label>
+                </div>
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-4" name="type[]" value="Крепеж">
+                  <label for="type-4">Крепеж</label>
+                </div>
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-5" name="type[]" value="Коннектор">
+                  <label for="type-5">Коннектор</label>
+                </div>
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-6" name="type[]" value="Коннектор выводной">
+                  <label for="type-6">Коннектор выводной</label>
+                </div>
+              </div>
+            </div>
+            <div class="filter-protect">
+              <div class="ft">
+                <h6 class="filter-title no-marg pl-0">Класс пылевлагозащиты</h6>
+                <i class="fa fa-angle-up"></i>
+              </div>
+              
+              <div class="filter-container">
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-1" name="type[]" value="Лента">
+                  <label for="type-1">Лента</label>
+                </div>
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-2" name="type[]" value="Линейка">
+                  <label for="type-2">Линейка</label>
+                </div>
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-3" name="type[]" value="Заглушка">
+                  <label for="type-3">Заглушка</label>
+                </div>
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-4" name="type[]" value="Крепеж">
+                  <label for="type-4">Крепеж</label>
+                </div>
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-5" name="type[]" value="Коннектор">
+                  <label for="type-5">Коннектор</label>
+                </div>
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-6" name="type[]" value="Коннектор выводной">
+                  <label for="type-6">Коннектор выводной</label>
+                </div>
+              </div>
+            </div>
+            <div class="filter-protect">
+              <div class="ft">
+                <h6 class="filter-title no-marg pl-0">Класс пылевлагозащиты</h6>
+                <div class="img-box" data-tooltip="Red | Красный 625 nm">
+                  <img src="/img/main-page/news/question-circle.svg" alt="" class="ft-img" >
+                  <img src="/img/main-page/news/Vector.svg" alt="" class="ft-img2" >
+                </div>
+                
+                <i class="fa fa-angle-up"></i>
+              </div>
+              
+              <div class="filter-container">
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-1" name="type[]" value="Лента">
+                  <label for="type-1">Лента</label>
+                </div>
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-2" name="type[]" value="Линейка">
+                  <label for="type-2">Линейка</label>
+                </div>
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-3" name="type[]" value="Заглушка">
+                  <label for="type-3">Заглушка</label>
+                </div>
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-4" name="type[]" value="Крепеж">
+                  <label for="type-4">Крепеж</label>
+                </div>
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-5" name="type[]" value="Коннектор">
+                  <label for="type-5">Коннектор</label>
+                </div>
+                <div class="check-form">
+                  <input type="checkbox" class="custom-checkbox" id="type-6" name="type[]" value="Коннектор выводной">
+                  <label for="type-6">Коннектор выводной</label>
+                </div>
+              </div>
+            </div>            
+            <button type="reset" class="btn-reset">Очистить</button>
           </form>
         </div>
           </div>
 
-        <div class="result-filter"></div>
+        <div class="result-filter">
+          <div class="result-top">
+            <ul class="result-fil">
+              <li class="result-fil-item active">По популярности</li>
+              <li class="result-fil-item">По цене</li>
+              <li class="result-fil-item">По наличию</li>
+              <li class="result-fil-item">Под заказ</li>
+            </ul>
+<div>
+	<input type="checkbox" class="checkbox" id="chk" />
+	<label class="label" for="chk">
+		<img src="/img/icons/Vector.svg" alt="" class="img-svg s1">
+		<img src="/img/icons/grid-layout.svg" alt="" class="img-svg s2">
+		<div class="ball"></div>
+	</label>
+</div>
+          </div>
+            <input type='hidden' id='current_page' />
+            <input type='hidden' id='show_per_page' />
+          <div class="res-res" id="pagingBox">
+            <div class="product-item fullwidth">
+              <a href="#" class="product-link">
+                <div class="product-img">
+                  <div class="swiper sale-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="pi-firstcolumn">
+                  <div class="pi-header">
+                <div class="pi-h1">
+                  <div class="id-item">023856</div>
+                  <div class="status red">Под заказ</div>
+                </div>
+                <div class="pi-h2">
+                  <div class="rating"><img src="/img/main-page/card/Star.svg" alt="" class="star-icon">4.7</div>
+                  <div class="reviews">289 отзывов</div>
+                </div>
+                
+              </div>
+              <h6 class="pi-title">Профиль PIK-1007 2000 ANOD</h6>
+              <div class="pi-rowinfo">
+    <div class="pi-color">
+                    <div class="color"></div>
+                    <span class="color-text">Warm | Теплый 3000К</span>
+                  </div>
+                  <div class="pi-infor">
+                    <div class="inf-tit" data-tab="1">
+                      <h6 class="inf__tit">Описание</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="pi-acces">
+                    <div class="inf-tit" data-tab="2">
+                      <h6 class="inf__tit">Аксессуары</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-content">
+                <div data-tab-content="1" class="tab-pane">
+                  Алюминиевый анодированный мини-профиль для светодиодных лент и линеек. Габаритные размеры (L×W×H): 2000x10x7 мм. Ширина площадки для ленты 7 мм. Экраны, заглушки и другие аксессуары приобретаются отдельно. Цена за 1 метр.
+                </div>
+                <div data-tab-content="2" class="tab-pane">
+                  Tab content 2
+                </div>
+              </div>
+                </div>
+              <div class="pi-second-column">
+              <div class="pi-price">
+                <span class="price-active">40 566 ₽ </span>
+                <div class="price-before">
+                  <span class="price-start">47 999 </span>
+                </div>
+              </div>
+              <div class="pi-bonus">
+                <img src="/img/main-page/Local-Language.svg" alt="" class="bonus-img">
+                <span class="bonus-count">+270</span>
+                <span class="bonus-text">Бонусных рублей</span>
+              </div>
+              </div>
+
+              <div class="pi-footer">
+                <div class="change-range">
+<div class="pi-cart">
+                  <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                </div>
+                <div class="pi-range">
+                  <input type="button" class="buttonCountMinus" value="-">
+                  
+                  <div class="buttonCountNumber">1</div>
+                  <input type="button" class="buttonCountPlus" value="+">
+                  <input type="hidden" class="buttonCountVal" value="1" id="num" name="num">
+                </div>
+                </div>
+                <div class="pi-bottm">                <div class="pi-fav"><img src="/img/main-page/card/fav.svg" alt="" class="pi_icon"></div>
+                <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div></div>
+
+              </div>
+              </a>
+              
+            </div>
+            <div class="product-item fullwidth">
+              <a href="#" class="product-link">
+                <div class="product-img">
+                  <div class="swiper sale-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="pi-firstcolumn">
+                  <div class="pi-header">
+                <div class="pi-h1">
+                  <div class="id-item">023856</div>
+                  <div class="status wait">Под заказ</div>
+                </div>
+                <div class="pi-h2">
+                  <div class="rating"><img src="/img/main-page/card/Star.svg" alt="" class="star-icon">4.7</div>
+                  <div class="reviews">289 отзывов</div>
+                </div>
+                
+              </div>
+              <h6 class="pi-title">Профиль PIK-1007 2000 ANOD</h6>
+              <div class="pi-rowinfo">
+    <div class="pi-color">
+                    <div class="color"></div>
+                    <span class="color-text">Warm | Теплый 3000К</span>
+                  </div>
+                  <div class="pi-infor">
+                    <div class="inf-tit" data-tab="1">
+                      <h6 class="inf__tit">Описание</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="pi-acces">
+                    <div class="inf-tit" data-tab="2">
+                      <h6 class="inf__tit">Аксессуары</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-content">
+                <div data-tab-content="1" class="tab-pane">
+                  Алюминиевый анодированный мини-профиль для светодиодных лент и линеек. Габаритные размеры (L×W×H): 2000x10x7 мм. Ширина площадки для ленты 7 мм. Экраны, заглушки и другие аксессуары приобретаются отдельно. Цена за 1 метр.
+                </div>
+                <div data-tab-content="2" class="tab-pane">
+                  Tab content 2
+                </div>
+              </div>
+                </div>
+              <div class="pi-second-column">
+              <div class="pi-price">
+                <span class="price-active">40 566 ₽ </span>
+                <div class="price-before">
+                  <span class="price-start">47 999 </span>
+                </div>
+              </div>
+              <div class="pi-bonus">
+                <img src="/img/main-page/Local-Language.svg" alt="" class="bonus-img">
+                <span class="bonus-count">+270</span>
+                <span class="bonus-text">Бонусных рублей</span>
+              </div>
+              </div>
+
+              <div class="pi-footer">
+                <div class="change-range">
+<div class="pi-cart">
+                  <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                </div>
+                <div class="pi-range">
+                  <input type="button" class="buttonCountMinus" value="-">
+                  
+                  <div class="buttonCountNumber">1</div>
+                  <input type="button" class="buttonCountPlus" value="+">
+                  <input type="hidden" class="buttonCountVal" value="1" id="num" name="num">
+                </div>
+                </div>
+                <div class="pi-bottm">                <div class="pi-fav"><img src="/img/main-page/card/fav.svg" alt="" class="pi_icon"></div>
+                <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div></div>
+
+              </div>
+              </a>
+              
+            </div>
+            <div class="product-item fullwidth">
+              <a href="#" class="product-link">
+                <div class="product-img">
+                  <div class="swiper sale-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="pi-firstcolumn">
+                  <div class="pi-header">
+                <div class="pi-h1">
+                  <div class="id-item">023856</div>
+                  <div class="status red">Под заказ</div>
+                </div>
+                <div class="pi-h2">
+                  <div class="rating"><img src="/img/main-page/card/Star.svg" alt="" class="star-icon">4.7</div>
+                  <div class="reviews">289 отзывов</div>
+                </div>
+                
+              </div>
+              <h6 class="pi-title">Профиль PIK-1007 2000 ANOD</h6>
+              <div class="pi-rowinfo">
+    <div class="pi-color">
+                    <div class="color"></div>
+                    <span class="color-text">Warm | Теплый 3000К</span>
+                  </div>
+                  <div class="pi-infor">
+                    <div class="inf-tit" data-tab="1">
+                      <h6 class="inf__tit">Описание</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="pi-acces">
+                    <div class="inf-tit" data-tab="2">
+                      <h6 class="inf__tit">Аксессуары</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-content">
+                <div data-tab-content="1" class="tab-pane">
+                  Алюминиевый анодированный мини-профиль для светодиодных лент и линеек. Габаритные размеры (L×W×H): 2000x10x7 мм. Ширина площадки для ленты 7 мм. Экраны, заглушки и другие аксессуары приобретаются отдельно. Цена за 1 метр.
+                </div>
+                <div data-tab-content="2" class="tab-pane">
+                  Tab content 2
+                </div>
+              </div>
+                </div>
+              <div class="pi-second-column">
+              <div class="pi-price">
+                <span class="price-active">40 566 ₽ </span>
+                <div class="price-before">
+                  <span class="price-start">47 999 </span>
+                </div>
+              </div>
+              <div class="pi-bonus">
+                <img src="/img/main-page/Local-Language.svg" alt="" class="bonus-img">
+                <span class="bonus-count">+270</span>
+                <span class="bonus-text">Бонусных рублей</span>
+              </div>
+              </div>
+
+              <div class="pi-footer">
+                <div class="change-range">
+<div class="pi-cart">
+                  <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                </div>
+                <div class="pi-range">
+                  <input type="button" class="buttonCountMinus" value="-">
+                  
+                  <div class="buttonCountNumber">1</div>
+                  <input type="button" class="buttonCountPlus" value="+">
+                  <input type="hidden" class="buttonCountVal" value="1" id="num" name="num">
+                </div>
+                </div>
+                <div class="pi-bottm">                <div class="pi-fav"><img src="/img/main-page/card/fav.svg" alt="" class="pi_icon"></div>
+                <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div></div>
+
+              </div>
+              </a>
+              
+            </div>
+            <div class="product-item fullwidth">
+              <a href="#" class="product-link">
+                <div class="product-img">
+                  <div class="swiper sale-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="pi-firstcolumn">
+                  <div class="pi-header">
+                <div class="pi-h1">
+                  <div class="id-item">023856</div>
+                  <div class="status red">Под заказ</div>
+                </div>
+                <div class="pi-h2">
+                  <div class="rating"><img src="/img/main-page/card/Star.svg" alt="" class="star-icon">4.7</div>
+                  <div class="reviews">289 отзывов</div>
+                </div>
+                
+              </div>
+              <h6 class="pi-title">Профиль PIK-1007 2000 ANOD</h6>
+              <div class="pi-rowinfo">
+    <div class="pi-color">
+                    <div class="color"></div>
+                    <span class="color-text">Warm | Теплый 3000К</span>
+                  </div>
+                  <div class="pi-infor">
+                    <div class="inf-tit" data-tab="1">
+                      <h6 class="inf__tit">Описание</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="pi-acces">
+                    <div class="inf-tit" data-tab="2">
+                      <h6 class="inf__tit">Аксессуары</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-content">
+                <div data-tab-content="1" class="tab-pane">
+                  Алюминиевый анодированный мини-профиль для светодиодных лент и линеек. Габаритные размеры (L×W×H): 2000x10x7 мм. Ширина площадки для ленты 7 мм. Экраны, заглушки и другие аксессуары приобретаются отдельно. Цена за 1 метр.
+                </div>
+                <div data-tab-content="2" class="tab-pane">
+                  Tab content 2
+                </div>
+              </div>
+                </div>
+              <div class="pi-second-column">
+              <div class="pi-price">
+                <span class="price-active">40 566 ₽ </span>
+                <div class="price-before">
+                  <span class="price-start">47 999 </span>
+                </div>
+              </div>
+              <div class="pi-bonus">
+                <img src="/img/main-page/Local-Language.svg" alt="" class="bonus-img">
+                <span class="bonus-count">+270</span>
+                <span class="bonus-text">Бонусных рублей</span>
+              </div>
+              </div>
+
+              <div class="pi-footer">
+                <div class="change-range">
+<div class="pi-cart">
+                  <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                </div>
+                <div class="pi-range">
+                  <input type="button" class="buttonCountMinus" value="-">
+                  
+                  <div class="buttonCountNumber">1</div>
+                  <input type="button" class="buttonCountPlus" value="+">
+                  <input type="hidden" class="buttonCountVal" value="1" id="num" name="num">
+                </div>
+                </div>
+                <div class="pi-bottm">                <div class="pi-fav"><img src="/img/main-page/card/fav.svg" alt="" class="pi_icon"></div>
+                <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div></div>
+
+              </div>
+              </a>
+              
+            </div>
+            <div class="product-item fullwidth">
+              <a href="#" class="product-link">
+                <div class="product-img">
+                  <div class="swiper sale-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="pi-firstcolumn">
+                  <div class="pi-header">
+                <div class="pi-h1">
+                  <div class="id-item">023856</div>
+                  <div class="status in-shop">Под заказ</div>
+                </div>
+                <div class="pi-h2">
+                  <div class="rating"><img src="/img/main-page/card/Star.svg" alt="" class="star-icon">4.7</div>
+                  <div class="reviews">289 отзывов</div>
+                </div>
+                
+              </div>
+              <h6 class="pi-title">Профиль PIK-1007 2000 ANOD</h6>
+              <div class="pi-rowinfo">
+    <div class="pi-color">
+                    <div class="color"></div>
+                    <span class="color-text">Warm | Теплый 3000К</span>
+                  </div>
+                  <div class="pi-infor">
+                    <div class="inf-tit" data-tab="1">
+                      <h6 class="inf__tit">Описание</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="pi-acces">
+                    <div class="inf-tit" data-tab="2">
+                      <h6 class="inf__tit">Аксессуары</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-content">
+                <div data-tab-content="1" class="tab-pane">
+                  Алюминиевый анодированный мини-профиль для светодиодных лент и линеек. Габаритные размеры (L×W×H): 2000x10x7 мм. Ширина площадки для ленты 7 мм. Экраны, заглушки и другие аксессуары приобретаются отдельно. Цена за 1 метр.
+                </div>
+                <div data-tab-content="2" class="tab-pane">
+                  Tab content 2
+                </div>
+              </div>
+                </div>
+              <div class="pi-second-column">
+              <div class="pi-price">
+                <span class="price-active">40 566 ₽ </span>
+                <div class="price-before">
+                  <span class="price-start">47 999 </span>
+                </div>
+              </div>
+              <div class="pi-bonus">
+                <img src="/img/main-page/Local-Language.svg" alt="" class="bonus-img">
+                <span class="bonus-count">+270</span>
+                <span class="bonus-text">Бонусных рублей</span>
+              </div>
+              </div>
+
+              <div class="pi-footer">
+                <div class="change-range">
+<div class="pi-cart">
+                  <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                </div>
+                <div class="pi-range">
+                  <input type="button" class="buttonCountMinus" value="-">
+                  
+                  <div class="buttonCountNumber">1</div>
+                  <input type="button" class="buttonCountPlus" value="+">
+                  <input type="hidden" class="buttonCountVal" value="1" id="num" name="num">
+                </div>
+                </div>
+                <div class="pi-bottm">                <div class="pi-fav"><img src="/img/main-page/card/fav.svg" alt="" class="pi_icon"></div>
+                <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div></div>
+
+              </div>
+              </a>
+              
+            </div>
+            <div class="product-item fullwidth">
+              <a href="#" class="product-link">
+                <div class="product-img">
+                  <div class="swiper sale-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="pi-firstcolumn">
+                  <div class="pi-header">
+                <div class="pi-h1">
+                  <div class="id-item">023856</div>
+                  <div class="status red">Под заказ</div>
+                </div>
+                <div class="pi-h2">
+                  <div class="rating"><img src="/img/main-page/card/Star.svg" alt="" class="star-icon">4.7</div>
+                  <div class="reviews">289 отзывов</div>
+                </div>
+                
+              </div>
+              <h6 class="pi-title">Профиль PIK-1007 2000 ANOD</h6>
+              <div class="pi-rowinfo">
+    <div class="pi-color">
+                    <div class="color"></div>
+                    <span class="color-text">Warm | Теплый 3000К</span>
+                  </div>
+                  <div class="pi-infor">
+                    <div class="inf-tit" data-tab="1">
+                      <h6 class="inf__tit">Описание</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="pi-acces">
+                    <div class="inf-tit" data-tab="2">
+                      <h6 class="inf__tit">Аксессуары</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-content">
+                <div data-tab-content="1" class="tab-pane">
+                  Алюминиевый анодированный мини-профиль для светодиодных лент и линеек. Габаритные размеры (L×W×H): 2000x10x7 мм. Ширина площадки для ленты 7 мм. Экраны, заглушки и другие аксессуары приобретаются отдельно. Цена за 1 метр.
+                </div>
+                <div data-tab-content="2" class="tab-pane">
+                  Tab content 2
+                </div>
+              </div>
+                </div>
+              <div class="pi-second-column">
+              <div class="pi-price">
+                <span class="price-active">40 566 ₽ </span>
+                <div class="price-before">
+                  <span class="price-start">47 999 </span>
+                </div>
+              </div>
+              <div class="pi-bonus">
+                <img src="/img/main-page/Local-Language.svg" alt="" class="bonus-img">
+                <span class="bonus-count">+270</span>
+                <span class="bonus-text">Бонусных рублей</span>
+              </div>
+              </div>
+
+              <div class="pi-footer">
+                <div class="change-range">
+<div class="pi-cart">
+                  <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                </div>
+                <div class="pi-range">
+                  <input type="button" class="buttonCountMinus" value="-">
+                  
+                  <div class="buttonCountNumber">1</div>
+                  <input type="button" class="buttonCountPlus" value="+">
+                  <input type="hidden" class="buttonCountVal" value="1" id="num" name="num">
+                </div>
+                </div>
+                <div class="pi-bottm">                <div class="pi-fav"><img src="/img/main-page/card/fav.svg" alt="" class="pi_icon"></div>
+                <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div></div>
+
+              </div>
+              </a>
+              
+            </div>
+            <div class="product-item fullwidth">
+              <a href="#" class="product-link">
+                <div class="product-img">
+                  <div class="swiper sale-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="pi-firstcolumn">
+                  <div class="pi-header">
+                <div class="pi-h1">
+                  <div class="id-item">023856</div>
+                  <div class="status red">Под заказ</div>
+                </div>
+                <div class="pi-h2">
+                  <div class="rating"><img src="/img/main-page/card/Star.svg" alt="" class="star-icon">4.7</div>
+                  <div class="reviews">289 отзывов</div>
+                </div>
+                
+              </div>
+              <h6 class="pi-title">Профиль PIK-1007 2000 ANOD</h6>
+              <div class="pi-rowinfo">
+    <div class="pi-color">
+                    <div class="color"></div>
+                    <span class="color-text">Warm | Теплый 3000К</span>
+                  </div>
+                  <div class="pi-infor">
+                    <div class="inf-tit" data-tab="1">
+                      <h6 class="inf__tit">Описание</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="pi-acces">
+                    <div class="inf-tit" data-tab="2">
+                      <h6 class="inf__tit">Аксессуары</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-content">
+                <div data-tab-content="1" class="tab-pane">
+                  Алюминиевый анодированный мини-профиль для светодиодных лент и линеек. Габаритные размеры (L×W×H): 2000x10x7 мм. Ширина площадки для ленты 7 мм. Экраны, заглушки и другие аксессуары приобретаются отдельно. Цена за 1 метр.
+                </div>
+                <div data-tab-content="2" class="tab-pane">
+                  Tab content 2
+                </div>
+              </div>
+                </div>
+              <div class="pi-second-column">
+              <div class="pi-price">
+                <span class="price-active">40 566 ₽ </span>
+                <div class="price-before">
+                  <span class="price-start">47 999 </span>
+                </div>
+              </div>
+              <div class="pi-bonus">
+                <img src="/img/main-page/Local-Language.svg" alt="" class="bonus-img">
+                <span class="bonus-count">+270</span>
+                <span class="bonus-text">Бонусных рублей</span>
+              </div>
+              </div>
+
+              <div class="pi-footer">
+                <div class="change-range">
+<div class="pi-cart">
+                  <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                </div>
+                <div class="pi-range">
+                  <input type="button" class="buttonCountMinus" value="-">
+                  
+                  <div class="buttonCountNumber">1</div>
+                  <input type="button" class="buttonCountPlus" value="+">
+                  <input type="hidden" class="buttonCountVal" value="1" id="num" name="num">
+                </div>
+                </div>
+                <div class="pi-bottm">                <div class="pi-fav"><img src="/img/main-page/card/fav.svg" alt="" class="pi_icon"></div>
+                <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div></div>
+
+              </div>
+              </a>
+              
+            </div>
+            <div class="product-item fullwidth">
+              <a href="#" class="product-link">
+                <div class="product-img">
+                  <div class="swiper sale-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="pi-firstcolumn">
+                  <div class="pi-header">
+                <div class="pi-h1">
+                  <div class="id-item">023856</div>
+                  <div class="status red">Под заказ</div>
+                </div>
+                <div class="pi-h2">
+                  <div class="rating"><img src="/img/main-page/card/Star.svg" alt="" class="star-icon">4.7</div>
+                  <div class="reviews">289 отзывов</div>
+                </div>
+                
+              </div>
+              <h6 class="pi-title">Профиль PIK-1007 2000 ANOD</h6>
+              <div class="pi-rowinfo">
+    <div class="pi-color">
+                    <div class="color"></div>
+                    <span class="color-text">Warm | Теплый 3000К</span>
+                  </div>
+                  <div class="pi-infor">
+                    <div class="inf-tit" data-tab="1">
+                      <h6 class="inf__tit">Описание</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="pi-acces">
+                    <div class="inf-tit" data-tab="2">
+                      <h6 class="inf__tit">Аксессуары</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-content">
+                <div data-tab-content="1" class="tab-pane">
+                  Алюминиевый анодированный мини-профиль для светодиодных лент и линеек. Габаритные размеры (L×W×H): 2000x10x7 мм. Ширина площадки для ленты 7 мм. Экраны, заглушки и другие аксессуары приобретаются отдельно. Цена за 1 метр.
+                </div>
+                <div data-tab-content="2" class="tab-pane">
+                  Tab content 2
+                </div>
+              </div>
+                </div>
+              <div class="pi-second-column">
+              <div class="pi-price">
+                <span class="price-active">40 566 ₽ </span>
+                <div class="price-before">
+                  <span class="price-start">47 999 </span>
+                </div>
+              </div>
+              <div class="pi-bonus">
+                <img src="/img/main-page/Local-Language.svg" alt="" class="bonus-img">
+                <span class="bonus-count">+270</span>
+                <span class="bonus-text">Бонусных рублей</span>
+              </div>
+              </div>
+
+              <div class="pi-footer">
+                <div class="change-range">
+<div class="pi-cart">
+                  <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                </div>
+                <div class="pi-range">
+                  <input type="button" class="buttonCountMinus" value="-">
+                  
+                  <div class="buttonCountNumber">1</div>
+                  <input type="button" class="buttonCountPlus" value="+">
+                  <input type="hidden" class="buttonCountVal" value="1" id="num" name="num">
+                </div>
+                </div>
+                <div class="pi-bottm">                <div class="pi-fav"><img src="/img/main-page/card/fav.svg" alt="" class="pi_icon"></div>
+                <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div></div>
+
+              </div>
+              </a>
+              
+            </div>
+            <div class="product-item fullwidth">
+              <a href="#" class="product-link">
+                <div class="product-img">
+                  <div class="swiper sale-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="pi-firstcolumn">
+                  <div class="pi-header">
+                <div class="pi-h1">
+                  <div class="id-item">023856</div>
+                  <div class="status red">Под заказ</div>
+                </div>
+                <div class="pi-h2">
+                  <div class="rating"><img src="/img/main-page/card/Star.svg" alt="" class="star-icon">4.7</div>
+                  <div class="reviews">289 отзывов</div>
+                </div>
+                
+              </div>
+              <h6 class="pi-title">Профиль PIK-1007 2000 ANOD</h6>
+              <div class="pi-rowinfo">
+    <div class="pi-color">
+                    <div class="color"></div>
+                    <span class="color-text">Warm | Теплый 3000К</span>
+                  </div>
+                  <div class="pi-infor">
+                    <div class="inf-tit" data-tab="1">
+                      <h6 class="inf__tit">Описание</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="pi-acces">
+                    <div class="inf-tit" data-tab="2">
+                      <h6 class="inf__tit">Аксессуары</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-content">
+                <div data-tab-content="1" class="tab-pane">
+                  Алюминиевый анодированный мини-профиль для светодиодных лент и линеек. Габаритные размеры (L×W×H): 2000x10x7 мм. Ширина площадки для ленты 7 мм. Экраны, заглушки и другие аксессуары приобретаются отдельно. Цена за 1 метр.
+                </div>
+                <div data-tab-content="2" class="tab-pane">
+                  Tab content 2
+                </div>
+              </div>
+                </div>
+              <div class="pi-second-column">
+              <div class="pi-price">
+                <span class="price-active">40 566 ₽ </span>
+                <div class="price-before">
+                  <span class="price-start">47 999 </span>
+                </div>
+              </div>
+              <div class="pi-bonus">
+                <img src="/img/main-page/Local-Language.svg" alt="" class="bonus-img">
+                <span class="bonus-count">+270</span>
+                <span class="bonus-text">Бонусных рублей</span>
+              </div>
+              </div>
+
+              <div class="pi-footer">
+                <div class="change-range">
+<div class="pi-cart">
+                  <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                </div>
+                <div class="pi-range">
+                  <input type="button" class="buttonCountMinus" value="-">
+                  
+                  <div class="buttonCountNumber">1</div>
+                  <input type="button" class="buttonCountPlus" value="+">
+                  <input type="hidden" class="buttonCountVal" value="1" id="num" name="num">
+                </div>
+                </div>
+                <div class="pi-bottm">                <div class="pi-fav"><img src="/img/main-page/card/fav.svg" alt="" class="pi_icon"></div>
+                <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div></div>
+
+              </div>
+              </a>
+              
+            </div>
+            <div class="product-item fullwidth">
+              <a href="#" class="product-link">
+                <div class="product-img">
+                  <div class="swiper sale-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="pi-firstcolumn">
+                  <div class="pi-header">
+                <div class="pi-h1">
+                  <div class="id-item">023856</div>
+                  <div class="status red">Под заказ</div>
+                </div>
+                <div class="pi-h2">
+                  <div class="rating"><img src="/img/main-page/card/Star.svg" alt="" class="star-icon">4.7</div>
+                  <div class="reviews">289 отзывов</div>
+                </div>
+                
+              </div>
+              <h6 class="pi-title">Профиль PIK-1007 2000 ANOD</h6>
+              <div class="pi-rowinfo">
+    <div class="pi-color">
+                    <div class="color"></div>
+                    <span class="color-text">Warm | Теплый 3000К</span>
+                  </div>
+                  <div class="pi-infor">
+                    <div class="inf-tit" data-tab="1">
+                      <h6 class="inf__tit">Описание</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="pi-acces">
+                    <div class="inf-tit" data-tab="2">
+                      <h6 class="inf__tit">Аксессуары</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-content">
+                <div data-tab-content="1" class="tab-pane">
+                  Алюминиевый анодированный мини-профиль для светодиодных лент и линеек. Габаритные размеры (L×W×H): 2000x10x7 мм. Ширина площадки для ленты 7 мм. Экраны, заглушки и другие аксессуары приобретаются отдельно. Цена за 1 метр.
+                </div>
+                <div data-tab-content="2" class="tab-pane">
+                  Tab content 2
+                </div>
+              </div>
+                </div>
+              <div class="pi-second-column">
+              <div class="pi-price">
+                <span class="price-active">40 566 ₽ </span>
+                <div class="price-before">
+                  <span class="price-start">47 999 </span>
+                </div>
+              </div>
+              <div class="pi-bonus">
+                <img src="/img/main-page/Local-Language.svg" alt="" class="bonus-img">
+                <span class="bonus-count">+270</span>
+                <span class="bonus-text">Бонусных рублей</span>
+              </div>
+              </div>
+
+              <div class="pi-footer">
+                <div class="change-range">
+<div class="pi-cart">
+                  <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                </div>
+                <div class="pi-range">
+                  <input type="button" class="buttonCountMinus" value="-">
+                  
+                  <div class="buttonCountNumber">1</div>
+                  <input type="button" class="buttonCountPlus" value="+">
+                  <input type="hidden" class="buttonCountVal" value="1" id="num" name="num">
+                </div>
+                </div>
+                <div class="pi-bottm">                <div class="pi-fav"><img src="/img/main-page/card/fav.svg" alt="" class="pi_icon"></div>
+                <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div></div>
+
+              </div>
+              </a>
+              
+            </div>
+            <div class="product-item fullwidth">
+              <a href="#" class="product-link">
+                <div class="product-img">
+                  <div class="swiper sale-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="pi-firstcolumn">
+                  <div class="pi-header">
+                <div class="pi-h1">
+                  <div class="id-item">023856</div>
+                  <div class="status red">Под заказ</div>
+                </div>
+                <div class="pi-h2">
+                  <div class="rating"><img src="/img/main-page/card/Star.svg" alt="" class="star-icon">4.7</div>
+                  <div class="reviews">289 отзывов</div>
+                </div>
+                
+              </div>
+              <h6 class="pi-title">Профиль PIK-1007 2000 ANOD</h6>
+              <div class="pi-rowinfo">
+    <div class="pi-color">
+                    <div class="color"></div>
+                    <span class="color-text">Warm | Теплый 3000К</span>
+                  </div>
+                  <div class="pi-infor">
+                    <div class="inf-tit" data-tab="1">
+                      <h6 class="inf__tit">Описание</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="pi-acces">
+                    <div class="inf-tit" data-tab="2">
+                      <h6 class="inf__tit">Аксессуары</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-content">
+                <div data-tab-content="1" class="tab-pane">
+                  Алюминиевый анодированный мини-профиль для светодиодных лент и линеек. Габаритные размеры (L×W×H): 2000x10x7 мм. Ширина площадки для ленты 7 мм. Экраны, заглушки и другие аксессуары приобретаются отдельно. Цена за 1 метр.
+                </div>
+                <div data-tab-content="2" class="tab-pane">
+                  Tab content 2
+                </div>
+              </div>
+                </div>
+              <div class="pi-second-column">
+              <div class="pi-price">
+                <span class="price-active">40 566 ₽ </span>
+                <div class="price-before">
+                  <span class="price-start">47 999 </span>
+                </div>
+              </div>
+              <div class="pi-bonus">
+                <img src="/img/main-page/Local-Language.svg" alt="" class="bonus-img">
+                <span class="bonus-count">+270</span>
+                <span class="bonus-text">Бонусных рублей</span>
+              </div>
+              </div>
+
+              <div class="pi-footer">
+                <div class="change-range">
+<div class="pi-cart">
+                  <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                </div>
+                <div class="pi-range">
+                  <input type="button" class="buttonCountMinus" value="-">
+                  
+                  <div class="buttonCountNumber">1</div>
+                  <input type="button" class="buttonCountPlus" value="+">
+                  <input type="hidden" class="buttonCountVal" value="1" id="num" name="num">
+                </div>
+                </div>
+                <div class="pi-bottm">                <div class="pi-fav"><img src="/img/main-page/card/fav.svg" alt="" class="pi_icon"></div>
+                <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div></div>
+
+              </div>
+              </a>
+              
+            </div>
+            <div class="product-item fullwidth">
+              <a href="#" class="product-link">
+                <div class="product-img">
+                  <div class="swiper sale-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="pi-firstcolumn">
+                  <div class="pi-header">
+                <div class="pi-h1">
+                  <div class="id-item">023856</div>
+                  <div class="status red">Под заказ</div>
+                </div>
+                <div class="pi-h2">
+                  <div class="rating"><img src="/img/main-page/card/Star.svg" alt="" class="star-icon">4.7</div>
+                  <div class="reviews">289 отзывов</div>
+                </div>
+                
+              </div>
+              <h6 class="pi-title">Профиль PIK-1007 2000 ANOD</h6>
+              <div class="pi-rowinfo">
+    <div class="pi-color">
+                    <div class="color"></div>
+                    <span class="color-text">Warm | Теплый 3000К</span>
+                  </div>
+                  <div class="pi-infor">
+                    <div class="inf-tit" data-tab="1">
+                      <h6 class="inf__tit">Описание</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="pi-acces">
+                    <div class="inf-tit" data-tab="2">
+                      <h6 class="inf__tit">Аксессуары</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-content">
+                <div data-tab-content="1" class="tab-pane">
+                  Алюминиевый анодированный мини-профиль для светодиодных лент и линеек. Габаритные размеры (L×W×H): 2000x10x7 мм. Ширина площадки для ленты 7 мм. Экраны, заглушки и другие аксессуары приобретаются отдельно. Цена за 1 метр.
+                </div>
+                <div data-tab-content="2" class="tab-pane">
+                  Tab content 2
+                </div>
+              </div>
+                </div>
+              <div class="pi-second-column">
+              <div class="pi-price">
+                <span class="price-active">40 566 ₽ </span>
+                <div class="price-before">
+                  <span class="price-start">47 999 </span>
+                </div>
+              </div>
+              <div class="pi-bonus">
+                <img src="/img/main-page/Local-Language.svg" alt="" class="bonus-img">
+                <span class="bonus-count">+270</span>
+                <span class="bonus-text">Бонусных рублей</span>
+              </div>
+              </div>
+
+              <div class="pi-footer">
+                <div class="change-range">
+<div class="pi-cart">
+                  <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                </div>
+                <div class="pi-range">
+                  <input type="button" class="buttonCountMinus" value="-">
+                  
+                  <div class="buttonCountNumber">1</div>
+                  <input type="button" class="buttonCountPlus" value="+">
+                  <input type="hidden" class="buttonCountVal" value="1" id="num" name="num">
+                </div>
+                </div>
+                <div class="pi-bottm">                <div class="pi-fav"><img src="/img/main-page/card/fav.svg" alt="" class="pi_icon"></div>
+                <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div></div>
+
+              </div>
+              </a>
+              
+            </div>
+            <div class="product-item fullwidth">
+              <a href="#" class="product-link">
+                <div class="product-img">
+                  <div class="swiper sale-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="pi-firstcolumn">
+                  <div class="pi-header">
+                <div class="pi-h1">
+                  <div class="id-item">023856</div>
+                  <div class="status red">Под заказ</div>
+                </div>
+                <div class="pi-h2">
+                  <div class="rating"><img src="/img/main-page/card/Star.svg" alt="" class="star-icon">4.7</div>
+                  <div class="reviews">289 отзывов</div>
+                </div>
+                
+              </div>
+              <h6 class="pi-title">Профиль PIK-1007 2000 ANOD</h6>
+              <div class="pi-rowinfo">
+    <div class="pi-color">
+                    <div class="color"></div>
+                    <span class="color-text">Warm | Теплый 3000К</span>
+                  </div>
+                  <div class="pi-infor">
+                    <div class="inf-tit" data-tab="1">
+                      <h6 class="inf__tit">Описание</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="pi-acces">
+                    <div class="inf-tit" data-tab="2">
+                      <h6 class="inf__tit">Аксессуары</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-content">
+                <div data-tab-content="1" class="tab-pane">
+                  Алюминиевый анодированный мини-профиль для светодиодных лент и линеек. Габаритные размеры (L×W×H): 2000x10x7 мм. Ширина площадки для ленты 7 мм. Экраны, заглушки и другие аксессуары приобретаются отдельно. Цена за 1 метр.
+                </div>
+                <div data-tab-content="2" class="tab-pane">
+                  Tab content 2
+                </div>
+              </div>
+                </div>
+              <div class="pi-second-column">
+              <div class="pi-price">
+                <span class="price-active">40 566 ₽ </span>
+                <div class="price-before">
+                  <span class="price-start">47 999 </span>
+                </div>
+              </div>
+              <div class="pi-bonus">
+                <img src="/img/main-page/Local-Language.svg" alt="" class="bonus-img">
+                <span class="bonus-count">+270</span>
+                <span class="bonus-text">Бонусных рублей</span>
+              </div>
+              </div>
+
+              <div class="pi-footer">
+                <div class="change-range">
+<div class="pi-cart">
+                  <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                </div>
+                <div class="pi-range">
+                  <input type="button" class="buttonCountMinus" value="-">
+                  
+                  <div class="buttonCountNumber">1</div>
+                  <input type="button" class="buttonCountPlus" value="+">
+                  <input type="hidden" class="buttonCountVal" value="1" id="num" name="num">
+                </div>
+                </div>
+                <div class="pi-bottm">                <div class="pi-fav"><img src="/img/main-page/card/fav.svg" alt="" class="pi_icon"></div>
+                <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div></div>
+
+              </div>
+              </a>
+              
+            </div>
+            <div class="product-item fullwidth">
+              <a href="#" class="product-link">
+                <div class="product-img">
+                  <div class="swiper sale-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                      <div class="swiper-slide sale-img">
+                          <img
+                            src="img/main-page/item-1.jpeg"
+                            alt=""
+                            class="sale__img"
+                          />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="pi-firstcolumn">
+                  <div class="pi-header">
+                <div class="pi-h1">
+                  <div class="id-item">023856</div>
+                  <div class="status red">Под заказ</div>
+                </div>
+                <div class="pi-h2">
+                  <div class="rating"><img src="/img/main-page/card/Star.svg" alt="" class="star-icon">4.7</div>
+                  <div class="reviews">289 отзывов</div>
+                </div>
+                
+              </div>
+              <h6 class="pi-title">Профиль PIK-1007 2000 ANOD</h6>
+              <div class="pi-rowinfo">
+    <div class="pi-color">
+                    <div class="color"></div>
+                    <span class="color-text">Warm | Теплый 3000К</span>
+                  </div>
+                  <div class="pi-infor">
+                    <div class="inf-tit" data-tab="1">
+                      <h6 class="inf__tit">Описание</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="pi-acces">
+                    <div class="inf-tit" data-tab="2">
+                      <h6 class="inf__tit">Аксессуары</h6>
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-content">
+                <div data-tab-content="1" class="tab-pane">
+                  Алюминиевый анодированный мини-профиль для светодиодных лент и линеек. Габаритные размеры (L×W×H): 2000x10x7 мм. Ширина площадки для ленты 7 мм. Экраны, заглушки и другие аксессуары приобретаются отдельно. Цена за 1 метр.
+                </div>
+                <div data-tab-content="2" class="tab-pane">
+                  Tab content 2
+                </div>
+              </div>
+                </div>
+              <div class="pi-second-column">
+              <div class="pi-price">
+                <span class="price-active">40 566 ₽ </span>
+                <div class="price-before">
+                  <span class="price-start">47 999 </span>
+                </div>
+              </div>
+              <div class="pi-bonus">
+                <img src="/img/main-page/Local-Language.svg" alt="" class="bonus-img">
+                <span class="bonus-count">+270</span>
+                <span class="bonus-text">Бонусных рублей</span>
+              </div>
+              </div>
+
+              <div class="pi-footer">
+                <div class="change-range">
+<div class="pi-cart">
+                  <img src="/img/main-page/card/cart.svg" alt="" class="pi_icon">
+                </div>
+                <div class="pi-range">
+                  <input type="button" class="buttonCountMinus" value="-">
+                  
+                  <div class="buttonCountNumber">1</div>
+                  <input type="button" class="buttonCountPlus" value="+">
+                  <input type="hidden" class="buttonCountVal" value="1" id="num" name="num">
+                </div>
+                </div>
+                <div class="pi-bottm">                <div class="pi-fav"><img src="/img/main-page/card/fav.svg" alt="" class="pi_icon"></div>
+                <div class="pi-like"><img src="/img/main-page/card/like.svg" alt="" class="pi_icon"></div></div>
+
+              </div>
+              </a>
+              
+            </div>
+
+
+          </div>
+          <button class="showmore">Показать ещё</button>
+          <div class="res-footer">
+         <div id="page_navigation"></div>
+          <div class="select">
+                <input
+                  class="select__input"
+                  type="hidden"
+                  name="category"
+                  value="24"
+                />
+                <div class="select__head">Показывать по 24</div>
+                <ul class="select__list" style="display: none">
+                  <li class="select__item" data-attr="12">Показывать по 12</li>
+                  <li class="select__item" data-attr="24">Показывать по 24</li>
+                  <li class="select__item" data-attr="36">Показывать по 36</li>
+                  <li class="select__item" data-attr="48">Показывать по 48</li>
+                  <li class="select__item" data-attr="72">Показывать по 72</li>
+
+                </ul>
+              </div>
+          </div>
+ 
+        </div>
         </div>
 
       </div>
@@ -614,11 +2378,17 @@
   </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="js/pagination.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-
+    
     <script src="js/search.js"></script>
     <script src="js/open.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/img-svg.js"></script>
+     <script src="js/calculate.js"></script>
     <script src="js/accordion.js"></script>
+    <script src="js/pag.js"></script>
+    <script src="js/tabsitem.js"></script>
+    <script src="js/select.js"></script>
   </body>
 </html>
