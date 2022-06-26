@@ -1,0 +1,51 @@
+.delivery {}
+
+.container {}
+
+.favorite__title {}
+
+.content {
+    margin-bottom: 50px;
+
+}
+
+.content__item {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.content__item:nth-child(2n) {
+    background: #F5F5F6;
+}
+
+.content__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+
+
+    color: #333333;
+
+}
+
+.content__body {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* or 133% */
+
+
+    color: #6B6B6B;
+
+}
+
+
+.content__body>strong {
+    font-weight: 800;
+
+    color: #333333;
+}
