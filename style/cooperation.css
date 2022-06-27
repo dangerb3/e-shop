@@ -96,10 +96,15 @@
 .page__about {
     margin-top: 70px;
     display: flex;
+    margin-bottom: 70px;
 }
 
 .page__about1 {
     margin-right: 120px;
+}
+
+.page__about1>.page-title {
+    margin-top: 0;
 }
 
 .page-title {}
