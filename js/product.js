@@ -2,7 +2,6 @@ var swiper = new Swiper(".mini-product-swiper", {
   spaceBetween: 10,
   slidesPerView: 3,
   watchSlidesProgress: true,
-
 });
 const swiper2 = new Swiper(".product-swiper", {
   // Optional parameters
@@ -44,7 +43,6 @@ let buttonCountPlus = document.querySelectorAll(".buttonCountPlus");
 let buttonCountMinus = document.querySelectorAll(".buttonCountMinus");
 let number = 1;
 
-
 buttonCountPlus.forEach((element) => {
   element.onclick = function (e) {
     e.preventDefault();
@@ -83,12 +81,11 @@ const swiper3 = new Swiper(".tab-swiper", {
   // Navigation arrows
 
   grabCursor: true,
-  slidesPerView: 'auto',
+  slidesPerView: "auto",
   watchOverflow: true,
   spaceBetween: 20,
   freeMode: true,
 });
-
 
 var tabNavs = document.querySelectorAll(".tab-item");
 var tabPanes = document.querySelectorAll(".tab-pane");
@@ -115,4 +112,40 @@ $(".animated-progress span").each(function () {
   $(this).css({
     width: $(this).attr("data-progress") + "%",
   });
+});
+const swiper4 = new Swiper(".sales-swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  //loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next4",
+    prevEl: ".swiper-button-prev4",
+  },
+  grabCursor: true,
+  slidesPerView: 5,
+  grid: {
+    rows: 2,
+    fill: "row",
+  },
+  watchOverflow: true,
+  spaceBetween: 20,
+});
+let swiper5 = new Swiper(".sale-swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // Navigation arrows
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  grabCursor: true,
+  slidesPerView: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 5000,
+  },
 });

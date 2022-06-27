@@ -213,8 +213,13 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="favorite__items">
-                    <div class="cart__list-item item-cart">
+                <div class="fav-list">
+<input type='hidden' id='current_page' />
+                    <input type='hidden' id='show_per_page' />
+                    <div class="favorite__items" id="pagingBox">
+
+                    <div>
+                        <a href="" class="cart__list-item item-cart">
                         <div class="item-cart__main">
                             <img src="./img/cart/cart-item.png" alt="cart-item">
                             <div class="item-cart__description description-cart">
@@ -248,10 +253,11 @@
                             <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
 
                         </div>
-
+                    </a>
 
                     </div>
-                    <div class="cart__list-item item-cart">
+                    <div>
+                        <a href="" class="cart__list-item item-cart">
                         <div class="item-cart__main">
                             <img src="./img/cart/cart-item.png" alt="cart-item">
                             <div class="item-cart__description description-cart">
@@ -285,10 +291,11 @@
                             <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
 
                         </div>
-
+                    </a>
 
                     </div>
-                    <div class="cart__list-item item-cart">
+                    <div>
+                        <a href="" class="cart__list-item item-cart">
                         <div class="item-cart__main">
                             <img src="./img/cart/cart-item.png" alt="cart-item">
                             <div class="item-cart__description description-cart">
@@ -322,10 +329,11 @@
                             <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
 
                         </div>
-
+                    </a>
 
                     </div>
-                    <div class="cart__list-item item-cart">
+                    <div>
+                        <a href="" class="cart__list-item item-cart">
                         <div class="item-cart__main">
                             <img src="./img/cart/cart-item.png" alt="cart-item">
                             <div class="item-cart__description description-cart">
@@ -359,11 +367,15 @@
                             <img class="pi-remove" src="/img/cart/remove-button.svg" alt="like">
 
                         </div>
-
+                    </a>
 
                     </div>
                 </div>
-
+                <div id="page_navigation"></div>
+                </div>
+                    
+                
+                
             </div>
         </section>
     </div>
@@ -517,10 +529,12 @@
             <!-- </div> -->
         </div>
     </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/calculate.js"></script>
     <script src="js/open.js"></script>
-
+    <script src="js/pag2.js"></script>
 </body>
 
 </html>
