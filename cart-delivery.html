@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="style/sales.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/breadcrumps.css">
-    <link rel="stylesheet" href="style/cooperation.css">
+   
 
     <title>Arlight</title>
 </head>
@@ -206,9 +206,9 @@
                         </h1>
                         <div class="section-content">
                             <div class="checkbox-area">
-                                <input type="radio" id="individual" name="type" checked="true">
+                                <input class="custom-radio" type="radio" id="individual" name="type" checked="true" value="individual">
                                 <label for="individual">Физическое лицо</label><br>
-                                <input type="radio" id="legal" name="type">
+                                <input class="custom-radio" type="radio" id="legal" name="type" value="legal">
                                 <label for="legal">Юридическое лицо</label><br>
                             </div>
                         </div>
@@ -221,12 +221,12 @@
                             </h1>
                             <div class="section-content">
                                 <div class="checkbox-area">
-                                    <div> <input type="radio" id="courier" name="deliveryType" checked="true">
+                                    <div> <input class="custom-radio" type="radio" id="courier" name="deliveryType" checked="true" value="delivery">
                                         <label for="courier">Доставка курьером</label>
                                         <div class="hitbox">390 руб.</div>
                                     </div>
                                     <br>
-                                    <div><input type="radio" id="self" name="deliveryType">
+                                    <div><input class="custom-radio" type="radio" id="self" name="deliveryType" value="byself">
                                         <label for="self">Самовывоз</label>
                                         <div class="hitbox">бесплатно</div>
                                     </div>
@@ -241,21 +241,21 @@
                             </h1>
                             <div class="section-content">
                                 <div class="checkbox-area">
-                                    <div><input type="radio" id="whenReceived" name="payment" checked="true">
+                                    <div><input class="custom-radio" type="radio" id="whenReceived" name="payment" checked="true" value="whenReceived">
                                         <label for="whenReceived">Оплата при получении</label>
                                     </div><br>
 
-                                    <div> <input type="radio" id="inOffice" name="payment">
+                                    <div> <input class="custom-radio" type="radio" id="inOffice" name="payment" value="inOffice">
                                         <label for="inOffice">Оплата в нашем офисе</label>
                                     </div>
                                     <br>
 
-                                    <div> <input type="radio" id="online" name="payment">
+                                    <div> <input class="custom-radio" type="radio" id="online" name="payment" value="online">
                                         <label for="online">Оплата онлайн</label>
                                     </div>
                                     <br>
 
-                                    <div> <input type="radio" id="nonCash" name="payment">
+                                    <div> <input class="custom-radio" type="radio" id="nonCash" name="payment" value="nonCash">
                                         <label for="nonCash">Оплата по безналичному расчету</label>
                                     </div>
                                     <br>
@@ -373,44 +373,79 @@
                     </section>
                     <section class="client-form section">
                         <h1 class="section-header">
-                            Пункты самовывоза
+                            Покупатель
                         </h1>
-                        <div class="section-content">
+                        <div class="section-content company-form">
                             <form action="#" type="submit" value="Submit">
 
                                 <div class="profile-data">
 
                                     <label for="company">Название компании<span class="red">*</span></label>
-                                    <input type="text" id="company" class="profile-input">
+                                    <input type="text" id="company" class="profile-input" name="name-company" required>
 
                                     <label for="inn">ИНН</label>
-                                    <input type="text" id="inn" class="profile-input">
+                                    <input type="text" id="inn" class="profile-input" name="inn">
 
 
                                     <label for="username">Контактное лицо<span class="red">*</span></label>
-                                    <input type="text" id="username" class="profile-input">
+                                    <input type="text" id="username" class="profile-input" name="contact-person" required>
 
 
                                     <label for="number">Телефон<span class="red">*</span></label>
-                                    <input type="tel" id="number" class="profile-input">
+                                    <input type="tel" id="number" class="profile-input" name="phone" required>
 
                                     <label for="email">Email <span class="red">*</span></label>
-                                    <input type="email" id="email" class="profile-input">
+                                    <input type="email" id="email" class="profile-input" name="email" required>
 
                                     <label for="address">Адрес доставки<span class="red">*</span></label>
-                                    <input type="text" id="address" class="profile-input">
+                                    <input type="text" id="address" class="profile-input" name="address" required>
 
                                     <label for="comment">Комментарии к заказу</label>
-                                    <input type="text" id="comment" class="profile-input">
-
-                                    <label for="payInfo">Прикрепить реквизиты</label>
-                                    <div class='input-button'> <input type="text" id="payInfo" class="profile-input ">
-                                    </div>
+                                    <input type="text" id="comment" class="profile-input" name="comment">
+                                    <div class="upload-file__wrapper">
+              <label for="upload-file__input_1" class="form-label">Прикрепить реквизиты</label>
+        <input
+            type="file"
+            name="files[]"
+            id="upload-file__input_1"
+            class="upload-file__input"
+            accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip"
+            multiple
+        >
+        <label class="upload-file__label" for="upload-file__input_1">
+            <img src="/img/main-page/news/download.svg" alt="" class="upload-file-icon">
+            <span class="upload-file__text"></span>
+        </label>
+    </div>
                                 </div>
 
                             </form>
                         </div>
+                        <div class="section-content person-form">
+                            <form action="#" type="submit" value="Submit">
 
+                                <div class="profile-data">
+
+                                    <label for="company">ФИО<span class="red">*</span></label>
+                                    <input type="text" id="company" class="profile-input" name="name" required>
+
+
+
+                                    <label for="number">Телефон<span class="red">*</span></label>
+                                    <input type="tel" id="number" class="profile-input" name="phone" required>
+
+                                    <label for="email">Email <span class="red">*</span></label>
+                                    <input type="email" id="email" class="profile-input" name="email" required>
+
+                                    <label for="address">Адрес доставки<span class="red">*</span></label>
+                                    <input type="text" id="address" class="profile-input" name="address" required>
+
+                                    <label for="comment">Комментарии к заказу</label>
+                                    <input type="text" id="comment" class="profile-input" name="comment">
+                                </div>
+
+                            </form>
+                        </div>
                     </section>
                     <section class="orders section">
                         <h1 class="section-header">
@@ -690,11 +725,12 @@
             <!-- </div> -->
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+           <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/accordion3.js"></script>
-    <script src="js/calculate.js"></script>
     <script src="js/open.js"></script>
-
+<script src="js/cart-delivery.js"></script>
 </body>
 
 </html>

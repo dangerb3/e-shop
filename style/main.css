@@ -162,3 +162,6 @@ margin-bottom: 36px;
   .custom-radio:disabled+label::before {
     background-color: #e9ecef;
   }
+  .d-none{
+    display: none;
+  }

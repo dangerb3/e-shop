@@ -189,7 +189,9 @@
 
 .client-form>.section-content {
     width: 100%;
-    margin-right: 103px
+    margin-right: 103px;
+    padding-left: 103px !important;
+    margin-left: 0!important;
 }
 
 .red {
@@ -220,4 +222,35 @@
 .profile-data>input,
 .profile-data>div>input {
     width: 816px !important;
+}
+.profile-input{
+    font-size: 16px!important;
+    line-height: 20px!important;
+    padding: 8px!important;
+    border: 1px solid #E5E5E5 !important;
+    border-radius: 10px !important;
+    margin-top: 5px;
+}
+.upload-file__wrapper{
+        width: 816px  !important;
+}
+.form-label,.profile-data>label{
+font-style: normal !important;
+font-weight: 400 !important;
+font-size: 12px !important;
+line-height: 150% !important;
+/* identical to box height, or 18px */
+
+
+color: #333333 !important;
+}
+.upload-file__label{
+    max-width:100% !important;
+
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #E5E5E5 !important;
+}
+.client-form{
+    padding-bottom: 50px;
 }
