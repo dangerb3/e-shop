@@ -1,10 +1,11 @@
-.delivery {}
+.delivery {
+    margin-top: 20px;
+}
 
 .container {}
 
-.favorite__title {}
-
 .content {
+    margin-top: 0 !important;
     margin-bottom: 50px;
 
 }

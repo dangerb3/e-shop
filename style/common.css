@@ -1,0 +1,107 @@
+.page-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 20px;
+    /* identical to box height, or 83% */
+
+    letter-spacing: 0.3px;
+
+    color: #333333;
+    margin-top: 20px;
+}
+
+
+.content {
+    margin-top: 30px;
+
+}
+
+.content__header {
+    width: 100%;
+    border-bottom: 1px solid #F3F3F3;
+
+}
+
+.content__header-item {
+    display: inline-flex;
+    border-bottom: 1px solid #333333;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+
+    letter-spacing: 0.3px;
+
+    color: #333333;
+
+    padding-bottom: 9px;
+
+
+}
+
+.content__header-title {
+    width: 110%
+}
+
+
+.content__header-count {
+    position: relative;
+    /* right: 5px; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+
+    letter-spacing: 0.3px;
+
+    color: #333333;
+    /* border-bottom: 1px solid #333333; */
+
+
+}
+
+
+.profile-button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+
+    color: #E41434;
+    cursor: pointer;
+}
+
+.white-button {
+
+    background: #FFFFFF;
+    border: 1px solid #B5B5B9;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 24px;
+    width: 168px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.regular-black {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #333333;
+}
+
+.text-mini-gray {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6B6B6B;
+}
