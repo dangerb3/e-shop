@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/cart-delivery.css">
+    <link rel="stylesheet" href="style/profile-setting.css">
+
+
+    <link rel="stylesheet" href="style/favorite-cart.css">
+    <link rel="stylesheet" href="style/sales.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/breadcrumps.css">
+    <link rel="stylesheet" href="style/cooperation.css">
+
+    <title>Arlight</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-header">
+            <div class="container">
+                <p class="header-text">
+                    Магазин является официальным. Вся продукция сертифицирована, на все
+                    товары расспространяется гарантия.
+                </p>
+            </div>
+        </div>
+        <div class="middle-header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="city">
+                        <img src="/img/header/Hero/pin.svg" alt="" class="icon" />
+                        <span class="city-text text">Москва</span>
+                    </div>
+                    <div class="location">
+                        <span class="location-text ht">Шоу-рум</span>
+                        <span class="location-address text">Москва, ул. Солнечногорская, 4, стр. 13</span>
+                    </div>
+                    <div class="mail">
+                        <a href="mailto:zakaz@test.ru" class="mail-link">zakaz@test.ru</a>
+                        <span class="mail-text text">По любым вопросам</span>
+                    </div>
+                    <div class="phone">
+                        <img src="/img/header/Hero/phone-1.svg" alt="" class="icon" />
+                        <a href="tel:88002221100" class="phone-link">8 800 222-11-00</a>
+                    </div>
+                    <div class="phone">
+                        <img src="/img/header/Hero/phone-2.svg" alt="" class="icon" />
+                        <a href="https://api.whatsapp.com/send?phone=88002221100&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83..."
+                            class="phone-link">8 800 222-11-00</a>
+                    </div>
+                    <span class="time-work">пн-пт: 9:00 - 18:00</span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container">
+                <div class="header-first">
+                    <a class="header-logo">
+                        <img src="/img/header/Hero/logo.svg" alt="" class="header__img">
+                    </a>
+                    <nav class="menu">
+                        <ul class="nav-menu">
+                            <li class="nav-item">
+                                <a href="#" class="nav__link">Сотрудничество</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav__link">Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav__link">Доставка и оплата</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    </nav>
+                </div>
+                <div class="header-second">
+                    <a href="#" class="header-btn">Каталог</a>
+                    <div class="search-block">
+                        <a href="#" class="btn-stock">Акции</a>
+                        <div class="ss">
+                            <form action="" class="search">
+                                <input type="search" class="search-input" id="search_box" name="search"
+                                    placeholder="Поиск по сайту" autocomplete="off" />
+                                <button class="search-bottom">
+                                    <img src="/img/header/Hero/search.svg" alt="" class="icon" />
+                                </button>
+                            </form>
+                            <div id="search_advice_wrapper">
+                                <div class="advice_variant">
+                                    <img src="/img/header/Hero/item.jpg" alt="" class="advice_variant-img">
+                                    <div class="advice_variant-info">
+                                        <h5 class="advice_variant-title">Светильник STAR FLAT 4TR 2700K 25W </h5>
+                                        <span class="advice_variant-text">Код товара: 705675</span>
+                                    </div>
+                                    <span class="advice_variant-price">4300 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <nav class="nav-block">
+                        <ul class="nav-list">
+                            <li class="nav-ii">
+                                <img src="/img/header/Hero/cart.svg" alt="">
+                                <span class="ii__name">6 431</span>
+                            </li>
+                            <li class="nav-ii">
+                                <img src="/img/header/Hero/name.svg" alt="" class="img-svg">
+                                <span class="ii__name">Войти</span>
+                            </li>
+                            <li class="nav-ii">
+                                <img src="/img/header/Hero/login.svg" alt="" class="img-svg like-svg">
+                                <span class="ii__name">Сравнение</span>
+                                <span class="ii__number">2</span>
+                            </li>
+                            <li class="nav-ii">
+                                <img src="/img/header/Hero/like.svg" alt="" class="img-svg">
+                                <span class="ii__name">Избранное</span>
+                                <span class="ii__number">24</span>
+                            </li>
+                            <li class="nav-ii">
+                                <img src="/img/header/Hero/fav.svg" alt="" class="img-svg">
+                                <span class="ii__name">Корзина</span>
+                                <span class="ii__number">2</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page">
+
+
+        <nav class="breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb-list">
+                    <li class="breadcrumb-list__item">
+                        <a href="/" class="breadcrumb-list__link">Главная </a>
+                    </li>
+                    <li class="breadcrumb-list__item">
+                        <a href="#" class="breadcrumb-list__link">Каталог </a>
+                    </li>
+                    <li class="breadcrumb-list__item2">
+                        <button class="dropdown-btn"> <span class="breadcrumb-list__link2">Светодиодные ленты </span>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="#">Ссылка 1</a>
+                            <a href="#">Ссылка 2</a>
+                            <a href="#">Ссылка 3</a>
+                        </div>
+                    </li>
+                    <li class="breadcrumb-list__item2">
+                        <button class="dropdown-btn"><span class="breadcrumb-list__link2">Ленты LUX SMD 3528 </span>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="#">Ссылка 1</a>
+                            <a href="#">Ссылка 2</a>
+                            <a href="#">Ссылка 3</a>
+                        </div>
+                    </li>
+                    <li class="breadcrumb-list__item">
+                        <button class="dropdown-btn"> <span class="breadcrumb-list__link2">5 мм узкие RT 12V 60 (4.8
+                                W/m) </span>
+                            <i class="fa fa-caret-up"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="#">Ссылка 1</a>
+                            <a href="#">Ссылка 2</a>
+                            <a href="#">Ссылка 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <div class="nav-back container"><a href="">Вернуться к покупкам</a></div>
+
+        <section class="cart container">
+            <h1 class="cart__title">Корзина</h1>
+            <div class="cart__wrapper">
+                <div class="cart__list">
+                    <section class="type-client section">
+                        <h1 class="section-header">
+                            Тип покупателя
+                        </h1>
+                        <div class="section-content">
+                            <div class="checkbox-area">
+                                <input type="radio" id="individual" name="type" checked="true">
+                                <label for="individual">Физическое лицо</label><br>
+                                <input type="radio" id="legal" name="type">
+                                <label for="legal">Юридическое лицо</label><br>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section class="delivery-payment section">
+                        <section class="delivery section">
+                            <h1 class="section-header">
+                                Способ доставки
+                            </h1>
+                            <div class="section-content">
+                                <div class="checkbox-area">
+                                    <div> <input type="radio" id="courier" name="deliveryType" checked="true">
+                                        <label for="courier">Доставка курьером</label>
+                                        <div class="hitbox">390 руб.</div>
+                                    </div>
+                                    <br>
+                                    <div><input type="radio" id="self" name="deliveryType">
+                                        <label for="self">Самовывоз</label>
+                                        <div class="hitbox">бесплатно</div>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                        </section>
+                        <section class="payment section">
+                            <h1 class="section-header">
+                                Способ оплаты
+                            </h1>
+                            <div class="section-content">
+                                <div class="checkbox-area">
+                                    <div><input type="radio" id="whenReceived" name="payment" checked="true">
+                                        <label for="whenReceived">Оплата при получении</label>
+                                    </div><br>
+
+                                    <div> <input type="radio" id="inOffice" name="payment">
+                                        <label for="inOffice">Оплата в нашем офисе</label>
+                                    </div>
+                                    <br>
+
+                                    <div> <input type="radio" id="online" name="payment">
+                                        <label for="online">Оплата онлайн</label>
+                                    </div>
+                                    <br>
+
+                                    <div> <input type="radio" id="nonCash" name="payment">
+                                        <label for="nonCash">Оплата по безналичному расчету</label>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                        </section>
+
+
+                    </section>
+                    <section class="delivery-self section">
+                        <h1 class="section-header">
+                            Самовывоз
+                        </h1>
+                        <div class="section-content">
+                            <img src="/img/cart-delivery/Basemap image.png" alt="">
+                        </div>
+
+                    </section>
+
+                    <section class="delivery-points section">
+                        <h1 class="section-header">
+                            Пункты самовывоза
+                        </h1>
+                        <div class="section-content">
+                            <div class="delivery-points">
+                                <div class="delivery-points__item delivery-points__item_show">
+                                    <div class="delivery-points__header">
+                                        <div style="display: flex"><img src="/img/cart-delivery/pin.svg" alt="">
+                                            &nbsp; &nbsp;
+                                            <div class="delivery-text">Бизнес парк Румянцево, Москва, п. Московский,
+                                                Киевское шоссе 22-й км., дововл. 4, стр. 2, этаж 3, блок Г Пав. 355Г
+                                            </div>
+                                        </div>
+
+                                        <button class="submit-button_red button-min">Выбран</button>
+
+                                    </div>
+                                    <div class="divider-min"></div>
+                                    <div class="delivery-points__body">
+                                        <div>
+                                            <div class="delivery-text-min">Бизнес парк Румянцево
+                                            </div>
+                                            <div class="delivery-text-min">Адрес: Бизнес парк Румянцево, Москва, п.
+                                                Московский,
+                                                Киевское шоссе 22-й км., дововл. 4, стр. 2, этаж 3, блок Г Пав. 355Г
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <img src="/img/cart-delivery/фото.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="delivery-points__item">
+                                    <div class="delivery-points__header">
+                                        <div style="display: flex"><img src="/img/cart-delivery/pin.svg" alt="">
+                                            &nbsp; &nbsp;
+                                            <div class="delivery-text">Бизнес парк Румянцево, Москва, п. Московский,
+                                                Киевское шоссе 22-й км., дововл. 4, стр. 2, этаж 3, блок Г Пав. 355Г
+                                            </div>
+                                        </div>
+
+                                        <button class="submit-button_red button-min">Выбран</button>
+
+                                    </div>
+                                    <div class="divider-min"></div>
+                                    <div class="delivery-points__body">
+                                        <div>
+                                            <div class="delivery-text-min">Бизнес парк Румянцево
+                                            </div>
+                                            <div class="delivery-text-min">Адрес: Бизнес парк Румянцево, Москва, п.
+                                                Московский,
+                                                Киевское шоссе 22-й км., дововл. 4, стр. 2, этаж 3, блок Г Пав. 355Г
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <img src="/img/cart-delivery/фото.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="delivery-points__item">
+                                    <div class="delivery-points__header">
+                                        <div style="display: flex"><img src="/img/cart-delivery/pin.svg" alt="">
+                                            &nbsp; &nbsp;
+                                            <div class="delivery-text">Бизнес парк Румянцево, Москва, п. Московский,
+                                                Киевское шоссе 22-й км., дововл. 4, стр. 2, этаж 3, блок Г Пав. 355Г
+                                            </div>
+                                        </div>
+
+                                        <button class="submit-button_red button-min">Выбран</button>
+
+                                    </div>
+                                    <div class="divider-min"></div>
+                                    <div class="delivery-points__body">
+                                        <div>
+                                            <div class="delivery-text-min">Бизнес парк Румянцево
+                                            </div>
+                                            <div class="delivery-text-min">Адрес: Бизнес парк Румянцево, Москва, п.
+                                                Московский,
+                                                Киевское шоссе 22-й км., дововл. 4, стр. 2, этаж 3, блок Г Пав. 355Г
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <img src="/img/cart-delivery/фото.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section>
+                    <section class="client-form section">
+                        <h1 class="section-header">
+                            Пункты самовывоза
+                        </h1>
+                        <div class="section-content">
+                            <form action="#" type="submit" value="Submit">
+
+                                <div class="profile-data">
+
+                                    <label for="company">Название компании<span class="red">*</span></label>
+                                    <input type="text" id="company" class="profile-input">
+
+                                    <label for="inn">ИНН</label>
+                                    <input type="text" id="inn" class="profile-input">
+
+
+                                    <label for="username">Контактное лицо<span class="red">*</span></label>
+                                    <input type="text" id="username" class="profile-input">
+
+
+                                    <label for="number">Телефон<span class="red">*</span></label>
+                                    <input type="tel" id="number" class="profile-input">
+
+                                    <label for="email">Email <span class="red">*</span></label>
+                                    <input type="email" id="email" class="profile-input">
+
+                                    <label for="address">Адрес доставки<span class="red">*</span></label>
+                                    <input type="text" id="address" class="profile-input">
+
+                                    <label for="comment">Комментарии к заказу</label>
+                                    <input type="text" id="comment" class="profile-input">
+
+                                    <label for="payInfo">Прикрепить реквизиты</label>
+                                    <div class='input-button'> <input type="text" id="payInfo" class="profile-input ">
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </section>
+                    <section class="orders section">
+                        <h1 class="section-header">
+                            Товары в заказе
+                        </h1>
+                        <div class="cart__list-header header-cart">
+                            <div class="header-cart__main">Товары</div>
+                            <div class="header-cart__second">
+                                <div class="header-cart__second-item ">Цена</div>
+                                <div class="header-cart__second-item">Количество</div>
+                                <div class="header-cart__second-item ">Сумма</div>
+                            </div>
+                        </div>
+                        <div class="cart__list-header-divider"></div>
+                        <div class="cart__list-items">
+                            <div class="cart__list-item item-cart">
+                                <div class="item-cart__main">
+                                    <img src="./img/cart/cart-item.png" alt="cart-item">
+                                    <div class="item-cart__description description-cart">
+                                        <h3 class="desciption-cart__number">023856</h3>
+                                        <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
+                                    </div>
+                                </div>
+                                <div class="item-cart__details details-item-cart">
+                                    <div class="details-item-cart__price ">40 566 ₽</div>
+                                    <div class="details-item-cart__count ">
+                                        2 шт
+                                    </div>
+                                    <div class="details-item-cart__amount ">
+                                        40 566 ₽
+
+                                    </div>
+                                    <!-- <button class="details-item-cart__favorite">s</button> -->
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="cart__list-item item-cart">
+                                <div class="item-cart__main">
+                                    <img src="./img/cart/cart-item.png" alt="cart-item">
+                                    <div class="item-cart__description description-cart">
+                                        <h3 class="desciption-cart__number">023856</h3>
+                                        <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
+                                    </div>
+                                </div>
+                                <div class="item-cart__details details-item-cart">
+                                    <div class="details-item-cart__price ">40 566 ₽</div>
+                                    <div class="details-item-cart__count ">
+                                        2 шт
+                                    </div>
+                                    <div class="details-item-cart__amount ">
+                                        40 566 ₽
+
+                                    </div>
+                                    <!-- <button class="details-item-cart__favorite">s</button> -->
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="cart__list-item item-cart">
+                                <div class="item-cart__main">
+                                    <img src="./img/cart/cart-item.png" alt="cart-item">
+                                    <div class="item-cart__description description-cart">
+                                        <h3 class="desciption-cart__number">023856</h3>
+                                        <h4 class="desciption-cart__name">Профиль PIK-1007 2000 ANOD</h4>
+                                    </div>
+                                </div>
+                                <div class="item-cart__details details-item-cart">
+                                    <div class="details-item-cart__price ">40 566 ₽</div>
+                                    <div class="details-item-cart__count ">
+                                        2 шт
+                                    </div>
+                                    <div class="details-item-cart__amount ">
+                                        40 566 ₽
+
+                                    </div>
+                                    <!-- <button class="details-item-cart__favorite">s</button> -->
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+
+
+                </div>
+                <div class="cart__info">
+                    <div class="cart__info-about-cart">
+                        <div class="cart__info-about-cart-header">
+                            <h2>Ваш заказ</h2>
+                            <a>Изменить</a>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="row">
+                            <h4 class="text-mini-gray">Товар на:</h4>
+                            <div class="details-item-cart__price price-info">40 566 ₽</div>
+
+                        </div>
+                        <div class="row">
+                            <h4 class="text-mini-gray">Доставка:</h4>
+                            <div class="details-item-cart__price price-info">390 ₽</div>
+
+                        </div>
+                        <div class="divider"></div>
+                        <div class="row row-margin">
+                            <h3 class="text-mini-gray">Итого</h3>
+                            <div class="details-item-cart__price price-info">40 566 ₽</div>
+
+                        </div>
+                        <div class="pi-bonus">
+                            <img src="/img/cart/bonus-icon.svg" alt="" class="bonus-img">
+                            <span class="bonus-text_black">Вы получите +270 бонусных
+                                рублей</span>
+                        </div>
+                        <button class="submit-button_red">Оформить заказ</button>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <!-- <div class="container"> -->
+        <!-- <div class="footer__wrapper"> -->
+        <div class="footer__links container">
+            <div class="accordion">
+                <div class="accordion__item accordion__item_show">
+                    <div class="accordion__header">
+                        <a>Компания</a>
+                    </div>
+                    <div class="accordion__body">
+                        <div class="accordion__body-item">
+                            <div class="accordion__body-item-content">
+                                <a>О нас</a>
+                                <a>Новости</a>
+                                <a>Проекты</a>
+                                <a>Шоу-румы</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <a>Поддержка</a>
+                    </div>
+                    <div class="accordion__body">
+                        <div class="accordion__body-item">
+                            <div class="accordion__body-item-content">
+                                <a>Оплата</a>
+                                <a>Доставка</a>
+                                <a>Гарантия</a>
+                                <a>Обмен и возврат</a>
+                                <a>Вопрос-ответ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <a>B2B</a>
+                    </div>
+                    <div class="accordion__body">
+                        <div class="accordion__body-item">
+                            <div class="accordion__body-item-content">
+                                <a>Сотрудничество</a>
+                                <a>Оптовикам</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <a>Услуги</a>
+                    </div>
+                    <div class="accordion__body">
+                        <div class="accordion__body-item">
+                            <div class="accordion__body-item-content">
+                                <a>Светорасчет</a>
+                                <a>Светодизайн</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <a>Скачать</a>
+                    </div>
+                    <div class="accordion__body">
+                        <div class="accordion__body-item">
+                            <div class="accordion__body-item-content">
+                                <a>Сертификаты</a>
+                                <a>3D модели</a>
+                                <a>Каталоги</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <a>Контакты</a>
+                    </div>
+                    <div class="accordion__body">
+                        <div class="accordion__body-item">
+                            <div class="accordion__body-item-content">
+                                <a href="tel:88002221100">8 800 222-11-00</a>
+                                <a href="mailto:zakaz@test.ru">zakaz@test.ru</a>
+                                <a>Пн-пт: 9:00-19:00</a>
+                                <a>Пн-пт: 9:00-19:00</a>
+                                <a>Сб-вс: выходной</a>
+                                <a>Москва, ул. Солнечногорская, 4, стр. 13</a>
+                            </div>
+                            <div class="accordion__body-item-img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__divider container"></div>
+        <div class="footer__about container">
+            <div class="footer__about-copyright">
+                <p>Copyright 2012-2022</p>
+                <p>Официальный сайт интернет магазин дилера Arlight</p>
+            </div>
+            <div class="footer__about-copyright-links">
+                <div class="footer__about-social">
+                    <a class="footer__about-social-link" href=""> <img src="./img/footer/social/instagramm.svg"
+                            alt="instagram">
+                    </a>
+                    <a class="footer__about-social-link" href=""> <img src="./img/footer/social/youtube.svg"
+                            alt="youtube">
+                    </a>
+                    <a class="footer__about-social-link" href=""> <img src="./img/footer/social/vk.svg" alt="vk">
+                    </a>
+                    <a class="footer__about-social-link" href=""> <img src="./img/footer/social/facebook.svg"
+                            alt="facebook">
+                    </a>
+                </div>
+                <div class="footer__about-rating">
+                    <img src="./img/footer/rating.png" alt="rating">
+                </div>
+                <div class="footer__about-logo">
+                    <a href="/index.html"><img src="./img/footer/logo.svg" alt="logo"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer__info">
+            <div class="footer__info-wrapper container">
+                <div class="footer__info-links">
+                    <div class="footer__info-item">Политика возврата</div>
+                    <div class="footer__info-item">Обработка персональных данных</div>
+                    <div class="footer__info-item">Официальное уведомление</div>
+                </div>
+                <div class="footer__info-payments">
+                    <div class="footer__info-item">
+                        <div class="footer__info-item-text">Вы можете оплатить:</div>
+                        <div class="footer__info-item-payments">
+                            <img src="./img/footer/payments/visa.svg" alt="visa">
+                            <img src="./img/footer/payments/mastercard.svg" alt="mastercard">
+                            <img src="./img/footer/payments/mir.svg" alt="mir">
+                            <img src="./img/footer/payments/apple-pay.svg" alt="apple-pay">
+                            <img src="./img/footer/payments/google-pay.svg" alt="google-pay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </footer>
+    <script src="js/accordion.js"></script>
+    <script src="js/accordion3.js"></script>
+    <script src="js/calculate.js"></script>
+    <script src="js/open.js"></script>
+
+</body>
+
+</html>
