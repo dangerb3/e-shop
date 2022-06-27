@@ -723,6 +723,8 @@
   color: #fff;
   margin-top: 15px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 
 }
 

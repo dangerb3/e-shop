@@ -1,0 +1,249 @@
+.cooperation__head {
+    display: flex;
+    margin-top: 35px;
+
+}
+
+.standart-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    letter-spacing: 0.2px;
+
+    color: #333333;
+}
+
+.cooperation__text {
+    margin-right: 59px;
+
+}
+
+.cooperation__start {
+    min-width: 401px;
+}
+
+.cooperation__start>div:first-of-type {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.cooperation__head-text {
+    margin-top: 29px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    letter-spacing: 0.2px;
+
+    color: #333333;
+}
+
+.submit-button {
+    margin-top: 25px !important;
+    width: 230px !important;
+    height: 30px !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 11px !important;
+    line-height: 10px !important;
+    padding: 10px 12px !important;
+    text-transform: none !important;
+
+
+    /* identical to box height, or 91% */
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card__item {
+    width: 400px;
+    height: 200px;
+    background: #F5F5F6;
+    border: 1px solid #F3F3F3;
+    border-radius: 10px;
+    padding: 35px;
+    margin-bottom: 15px;
+
+}
+
+.card__item:hover {
+    background-image: url('/img/cooperation/Rectangle\ 77.png');
+    /* backdrop-filter: brightness(60%); */
+    color: white
+}
+
+.card__item:not(:nth-child(3n+3)) {
+    margin-right: 15px;
+}
+
+.card__logo {}
+
+.card__text {}
+
+.profile-button {}
+
+.page__about {
+    margin-top: 70px;
+    display: flex;
+}
+
+.page__about1 {
+    margin-right: 120px;
+}
+
+.page-title {}
+
+.page-text {
+    margin-top: 35px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+
+    letter-spacing: 0.1px;
+
+    color: #333333;
+    margin-bottom: 39px;
+}
+
+.page-file {}
+
+.submit-button2 {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: white;
+    color: #E41434;
+    border: 1px solid #E41434;
+    border-radius: 10px;
+    padding: 10px 12px;
+    width: 65px;
+}
+
+.page__about2 {
+    min-width: 815px;
+    display: flex;
+}
+
+.about2-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+
+    letter-spacing: 0.3px;
+
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.standart-text-mini {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+
+
+    color: #333333;
+    margin-right: 16px;
+
+}
+
+.standart-text-mini:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.page__form {
+    display: flex;
+    height: 713px;
+    margin-bottom: 95px;
+}
+
+.form-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+
+
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.form-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+
+    color: #333333;
+    margin-bottom: 20px;
+
+}
+
+
+.form-body {
+    padding: 60px 0px 60px 68px;
+    background: #F5F5F6;
+
+}
+
+.profile-data>label {
+    color: #333333 !important;
+
+}
+
+.profile-setting {
+    margin: 0 !important;
+}
+
+.profile-input {
+    margin-top: 5px;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    padding: 12px 16px !important;
+    margin-bottom: 10px !important;
+    width: 405px !important;
+}
+
+.checkbox-area>label {
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 10px !important;
+    line-height: 20px !important;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.2px !important;
+
+    color: #6B6B6B !important;
+    white-space: nowrap;
+}
+
+.checkbox-area {
+    margin-bottom: 25px !important;
+}
+
+.form-button {
+    width: 112px !important;
+    justify-content: center;
+    margin-top: 0 !important;
+    ;
+}

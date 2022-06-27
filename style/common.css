@@ -69,9 +69,6 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
-    /* identical to box height, or 18px */
-
-
     color: #E41434;
     cursor: pointer;
 }
@@ -104,4 +101,23 @@
     font-size: 12px;
     line-height: 16px;
     color: #6B6B6B;
+}
+
+.short-black-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+
+    letter-spacing: 0.3px;
+
+    color: #333333;
+
+}
+
+.divider {
+    border: 1px solid #6B6B6B;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
