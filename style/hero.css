@@ -67,11 +67,11 @@ color: #333333;
 .hero-light .hero-swiper .swiper-wrapper {
     height: 100%;
 }
-.hero-light .swiper-button-next, .swiper-button-prev{
+.hero-light .swiper-button-next,.hero-light .swiper-button-prev{
   height: 20px;
   width: 20px;
   top: 55%;
 }
-.hero-light .swiper-button-next:after, .swiper-button-prev:after{
+.hero-light .swiper-button-next:after,.hero-light .swiper-button-prev:after{
   font-size: 15px;
 }
