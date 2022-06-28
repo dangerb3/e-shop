@@ -37,25 +37,17 @@
     display: flex;
     align-items: center;
 }
-.custom-checkbox+label::before{
- border-radius: 4px!important;
-    border: 0.5px solid #737B7D !important;
-    color: #FFFFFF;
-    margin-right: 10px;
-}
-.custom-checkbox:checked+label::before{
-    background-color: #737B7D;
-}
-.custom-checkbox+label {
+
+.orders-text {
     font-style: normal;
-    font-weight: 600 !important;
-    font-size: 12px !important;
-    line-height: 16px !important;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
     /* identical to box height, or 133% */
 
-    letter-spacing: 0.3px !important;
+    letter-spacing: 0.3px;
 
-    color: #999999 !important;
+    color: #999999;
 }
 
 .orders-accordion__item {}
