@@ -149,13 +149,3 @@ let swiper5 = new Swiper(".sale-swiper", {
     delay: 5000,
   },
 });
-let revFilter = document.querySelectorAll(".rev-choice__item");
-for (z = 0; z < revFilter.length; z++) {
-  revFilter[z].addEventListener("click", (e) => {
-    for (let k = 0; k < revFilter.length; k++) {
-      revFilter[k].classList.remove("active");
-    }
-    let t = e.target;
-    t.classList.add("active");
-  });
-}

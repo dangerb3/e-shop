@@ -351,24 +351,24 @@
 .in-shop {
   color: #2dca2f;
 }
-.pi-bonus {
+.shop-footer .pi-bonus {
   display: flex;
   align-items: center;
   padding-bottom: 15px;
   border-bottom: 1px solid #b5b5b9;
 }
 
-.bonus-count {
+.shop-footer .bonus-count {
   font-weight: 700;
   font-size: 10px;
   line-height: 14px;
   color: #e74c3c;
   margin-right: 4px;
 }
-.bonus-img {
+.shop-footer .bonus-img {
   margin-right: 4px;
 }
-.bonus-text {
+.shop-footer .bonus-text {
   font-style: normal;
   font-weight: 500;
   font-size: 9px;
@@ -737,201 +737,4 @@
 }
 .access-wrapper {
   padding-bottom: 30px;
-}
-.reviews-block {
-  display: flex;
-  padding-top: 17px;
-  padding-bottom: 30px;
-}
-.reviews-scale {
-  margin-right: 37px;
-}
-.reviews-scale__top {
-  display: flex;
-  align-items: center;
-}
-.reviews-count {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 12px;
-  color: #333333;
-  margin-left: 24px;
-}
-.reviews-block .rev-mark {
-  margin-left: 0px;
-}
-.reviews-block .rev-write {
-  width: 116px;
-  margin-top: 20px;
-}
-.rev-star-icon {
-  margin-right: 2px;
-  width: 14px;
-  height: 14px;
-}
-.reviews-scale__top {
-  margin-bottom: 15px;
-}
-.reviews-list {
-  max-width: 816px;
-}
-.rev-choice {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  list-style-type: none;
-  margin-bottom: 27px;
-}
-.rev-choice__item:not(:last-child) {
-  margin-right: 27px;
-}
-.rev-choice__item {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 12px;
-  color: #333333;
-}
-.rev-choice__item.active {
-  font-weight: 700;
-}
-.full-review {
-  border-radius: 10px;
-}
-.full-review:not(:last-child) {
-  margin-bottom: 30px;
-}
-.main-rev {
-  padding: 19px 20px 15px;
-  background: #f3f3f3;
-}
-.user-avatar {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  margin-right: 10px;
-}
-.user-info-text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 12px;
-  letter-spacing: 0.2px;
-  color: #8f9597;
-}
-/* .info-top {
-  max-width: 114px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
-.user-info {
-  display: flex;
-  align-items: start;
-  margin-bottom: 15px;
-}
-.user-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 32px;
-}
-.rev-title {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 20px;
-  color: #333333;
-  margin-bottom: 10px;
-}
-.rev-content {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
-  color: #333333;
-  margin-bottom: 15px;
-}
-.rate-count {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 12px;
-  letter-spacing: 0.2px;
-  color: #8f9597;
-  margin-left: 5px;
-}
-.rate-block {
-  display: flex;
-  align-items: end;
-  margin-right: 20px;
-}
-.rate-block img {
-  width: 14px;
-  height: 14px;
-}
-.rev-bottom {
-  display: flex;
-  align-items: center;
-}
-.faq {
-  display: flex;
-  padding-top: 17px;
-  padding-bottom: 30px;
-}
-.faq-left {
-  max-width: 126px;
-  margin-right: 82px;
-}
-.faq-message {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 20px;
-  color: #333333;
-  margin-bottom: 20px;
-}
-.faq .rev-write {
-  max-width: 98px;
-}
-.faq-right {
-  padding-top: 15px;
-}
-.faq-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
-  color: #333333;
-}
-.answer {
-  margin-left: 33px;
-}
-.answer-text {
-  margin-bottom: 13px;
-}
-.question-text {
-  margin-bottom: 30px;
-}
-.status {
-  background: #e74c3c;
-  border-radius: 5px;
-  color: #fff;
-  text-align: center;
-  padding: 0 4px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 9px;
-  line-height: 18px;
-  margin-left: 6px;
-}
-.name {
-  display: flex;
-  align-items: center;
-}
-.question-list__item:not(:last-child) {
-  margin-bottom: 30px;
 }

@@ -9,7 +9,7 @@ cart.forEach((element) => {
     let c = element.parentNode;
     let el = c.querySelector(".pi-range");
     let jj = c.querySelector(".buttonCountVal");
-    //jj.value=1;
+    jj.value=1;
     el.classList.add('d-flex');
   };
 });;
