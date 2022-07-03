@@ -30,29 +30,42 @@ window.onclick = function (event) {
 };
 
 
-let dropdown2 = document.getElementsByClassName("dropdown-button");
-let j;
-
-for (j = 0; j < dropdown2.length; j++) {
-  dropdown2[j].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    console.log(dropdownContent);
-    if (dropdownContent) {
-      if(dropdownContent.classList.contains("dropdown-list")){
-        dropdownContent.classList.toggle("active");
-      }
-      }
-  });
-}
 let catalogItem = document.getElementsByClassName("catalog__link");
 let k;
 
 for (k = 0; k < catalogItem.length; k++) {
-  catalogItem[k].addEventListener("click", function () {
-    if (!this.classList.contains('dropdown-button')){
-      this.classList.toggle("active");
-    } 
+  catalogItem[k].addEventListener("click", function (e) {
+    console.log(this);
+    $(".catalog__link").removeClass("active");
+    this.classList.add("active");
+    $(".dropdown-list").removeClass("active");
+    let listCont = this.nextElementSibling;
+    console.log(listCont);
+    if (listCont) {
+      if (listCont.classList.contains("dropdown-list")) {
+        listCont.classList.toggle("active");
+      }
+    }
+  });
+}
+let catalogItem2 = document.getElementsByClassName("dropdown-item");
+let k2;
+
+for (k2 = 0; k2 < catalogItem2.length; k2++) {
+  catalogItem2[k2].addEventListener("click", function (e) {
+    console.log(this);
+    $(".dropdown-item").removeClass("active");
+    this.classList.add("active");
+    //this.querySelectorAll(".dropdown-button")[0].classList.add("active");
+    $(".dropdown-item .dropdown-list").removeClass("active");
+    let listCont =
+      this.querySelectorAll(".dropdown-list")[0];
+    //console.log(listCont);
+    if (listCont) {
+      if (listCont.classList.contains("dropdown-list")) {
+        listCont.classList.toggle("active");
+      }
+    }
   });
 }
 

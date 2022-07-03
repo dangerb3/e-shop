@@ -27,7 +27,9 @@
   color: #E41434;
   padding: 5px 10px;
 }
-
+.sales-all:hover{
+  border-color: #6B6B6B;
+}
 .sect-no-marg {
   margin-bottom: 0;
 }
@@ -47,7 +49,9 @@
 
   padding: 20px;
 }
-
+.product-item:nth-child(5n){
+  margin-right: 0!important;
+}
 .product-item:hover {
   box-shadow: 0px 4px 24px #E5E5E5;
 }
@@ -156,14 +160,17 @@
   background-color: #6B6B6B;
   transform: rotate(-11.07deg);
   width: 45px;
-  height: 2px;
+  height: 1px;
   position: absolute;
   top: 10px;
   left: 0;
 
 
 }
-
+.sales-swiper{
+  padding-right: 17px;
+  padding-left: 17px;
+}
 .pi-bonus {
   display: flex;
   align-items: center;
@@ -210,7 +217,7 @@
 }
 
 .pi-cart:hover {
-  background: #CB4335;
+  background: #bd0f2c;
 }
 
 .pi-cart {
@@ -355,20 +362,25 @@
 .star-icon {
   margin-right: 2px;
 }
-
+.new-slider{
+  padding: 10px ;
+}
 .main-slide {
-  width: 39%;
+  width: 38.1%;
   height: 324px;
   position: relative;
-  filter: drop-shadow(0px 4px 24px rgba(0, 67, 101, 0.08));
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 24px;
-
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-
+.nih{
+  height: 334px;
+}
 .new-item {
-  width: 20.3%;
+  width: 20%;
 }
 
 .sub-title {
@@ -410,7 +422,16 @@
   object-position: left 0;
 
 }
-
+.news-swiper{
+  padding: 15px 15px 30px 15px;
+}
+.new-item{
+  border: 1px solid transparent;
+}
+.new-item:hover{
+  border-color: #F4F5F4;
+  box-shadow: 0px 16px 32px rgba(51, 51, 51, 0.08);
+}
 .news-swiper .swiper-wrapper {
   flex-wrap: wrap;
   width: 100% !important;
@@ -418,7 +439,8 @@
 }
 
 .news-swiper .new-item {
-  padding: 0 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
 }
 
 .new-item .new-photo {
@@ -438,7 +460,7 @@
 }
 
 .news {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 .project {
@@ -515,7 +537,9 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
-
+.project_link:hover{
+  background:#bd0f2c;
+}
 .project_img {
   width: 100%;
   height: 100%;
@@ -725,7 +749,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-
+  justify-content: center;
 }
 
 .submit-button_red {
@@ -782,5 +806,5 @@
 }
 
 .submit-button:hover {
-  background: #CB4335;
+  background: #bd0f2c;
 }

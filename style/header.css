@@ -50,6 +50,11 @@ margin-right: 11px;
 .location-address{
 border-bottom: 1px dashed #737B7D;
 font-weight: 400;
+display: block;
+color: #333333;
+}
+.location-address:hover{
+  border-bottom: 1px dashed transparent;
 }
 .mail-link{
   color: inherit;
@@ -119,7 +124,7 @@ padding: 12px 24px;
 margin-right: 14px;
 }
 .header-btn:hover{
-  background: #E74C3C;
+  background: #bd0f2c;
 }
 .btn-stock{
   display: block;
@@ -281,4 +286,11 @@ font-weight: 700;
 }
 .nav-ii:hover > .ii__name{
   color:#6B6B6B;
+}
+.nav-ii:hover.like-img >.img-svg path{
+  stroke:transparent;
+}
+.nav-ii:hover.cart-img >.img-svg path:nth-child(2), .nav-ii:hover.cart-img >.img-svg path:nth-child(3){
+  stroke:transparent;
+  fill:#6B6B6B;
 }

@@ -70,6 +70,7 @@ text-transform: uppercase;
 
 color: #333333;
 margin-bottom: 36px;
+padding-left: 10px;
 }
 .swiper-button-next, .swiper-button-prev,.swiper-button-next2, .swiper-button-prev2,.swiper-button-next3, .swiper-button-prev3,.swiper-button-next4, .swiper-button-prev4,.swiper-button-next5, .swiper-button-prev5,.swiper-button-next6, .swiper-button-prev6{
   background: #FFFFFF;
@@ -98,6 +99,11 @@ margin-bottom: 36px;
     letter-spacing: 0;
     font-variant: initial;
 }
+
+.swiper-button-next:hover:after, .swiper-button-prev:hover:after,.swiper-button-next2:hover:after, .swiper-button-prev2:hover:after,.swiper-button-next3:hover:after, .swiper-button-prev3:hover:after,.swiper-button-next4:hover:after, .swiper-button-prev4:hover:after, .swiper-button-next5:hover:after, .swiper-button-prev5:hover:after, .swiper-button-next6:hover:after, .swiper-button-prev6:hover:after{
+    color: #bd0f2c;
+}
+
 .swiper-button-next, .swiper-button-next2,.swiper-button-next3, .swiper-button-next4,.swiper-button-next5,.swiper-button-next6{
     right: 10px;
     left: auto;
@@ -115,4 +121,126 @@ margin-bottom: 36px;
 }
 .swiper-button-lock {
     display: none;
+}
+.modal-login {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 9999; /* Сидеть на вершине */
+  padding-top: 100px; /* Расположение коробки */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0,0,0); /* Цвет запасной вариант  */
+  background-color: rgba(0,0,0,0.4); /*Черный с непрозрачностью */
+}
+
+/* Модальное содержание */
+  .modal-login .modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  background: #F3F3F3;
+  border-radius: 10px;
+  width: 60%;
+  max-width: 547px;
+}
+  .modal-login .part-form2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+}
+  .modal-login .form-label2{
+    font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+text-align: center;
+color: #333333;
+margin: 0 auto;
+}
+
+
+/* Кнопка закрытия */
+  .modal-login .close {
+  color: #333333;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 12px;
+  margin-top: 12px;
+
+}
+
+  .modal-login .close:hover,
+  .modal-login .close:focus {
+  color: #000;
+  text-decoration: none;
+
+}
+
+
+  .modal-login .modal-body {
+    padding: 0px 100px 38px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+  .modal-login .modal-body h2{
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height, or 133% */
+
+letter-spacing: 0.3px;
+text-transform: uppercase;
+
+color: #333333;
+text-align: center;
+margin-bottom: 24px;
+}
+.btn-login{
+    background: #E41434;
+    border-radius: 10px;
+    padding: 12px 24px;
+    letter-spacing: 0.3px;
+text-transform: uppercase;
+margin-top: 12px;
+color: #FFFFFF;
+margin-bottom: 24px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.forgot-pass{
+    font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 150%;
+color: #E41434;
+}
+.reg-span{
+    font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 150%;
+color: #333333;
+}
+.forn-input {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #333333;
+    margin-top: 8px;
 }

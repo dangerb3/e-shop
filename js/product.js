@@ -39,16 +39,16 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
-let buttonCountPlus = document.querySelectorAll(".buttonCountPlus");
-let buttonCountMinus = document.querySelectorAll(".buttonCountMinus");
-let number = 1;
+let buttonCountPlus1 = document.querySelectorAll(".buttonCountPlus1");
+let buttonCountMinus1 = document.querySelectorAll(".buttonCountMinus1");
+let number1 = 1;
 
-buttonCountPlus.forEach((element) => {
+buttonCountPlus1.forEach((element) => {
   element.onclick = function (e) {
     e.preventDefault();
     let c = element.parentNode;
-    let count = c.querySelector(".buttonCountNumber");
-    let jj = c.querySelector(".buttonCountVal");
+    let count = c.querySelector(".buttonCountNumber1");
+    let jj = c.querySelector(".buttonCountVal1");
     console.log(jj);
     let countPlus = jj.value;
     if (+countPlus <= 10) {
@@ -58,13 +58,13 @@ buttonCountPlus.forEach((element) => {
   };
 });
 
-buttonCountMinus.forEach((element) => {
+buttonCountMinus1.forEach((element) => {
   element.onclick = function (e) {
     e.preventDefault();
     let c = element.parentNode;
     let pc = c.parentNode;
-    let count = c.querySelector(".buttonCountNumber");
-    let jj = c.querySelector(".buttonCountVal");
+    let count = c.querySelector(".buttonCountNumber1");
+    let jj = c.querySelector(".buttonCountVal1");
     let countPlus = jj.value;
     console.log(countPlus);
     if (+countPlus >= 2) {
@@ -89,16 +89,17 @@ const swiper3 = new Swiper(".tab-swiper", {
 
 var tabNavs = document.querySelectorAll(".tab-item");
 var tabPanes = document.querySelectorAll(".tab-pane");
-
-console.log(tabNavs);
 for (var u = 0; u < tabNavs.length; u++) {
   tabNavs[u].addEventListener("click", function (e) {
     e.preventDefault();
+    console.log(e.currentTarget);
     var activeTabAttr = e.currentTarget.getAttribute("data-tab");
+    console.log(activeTabAttr);
     for (var j = 0; j < tabNavs.length; j++) {
       var contentAttr = tabPanes[j].getAttribute("data-tab-content");
-      console.log(contentAttr);
       if (activeTabAttr === contentAttr) {
+        console.log(tabPanes[j]);
+
         tabNavs[j].classList.add("active");
         tabPanes[j].classList.add("active");
       } else {
@@ -159,3 +160,65 @@ for (z = 0; z < revFilter.length; z++) {
     t.classList.add("active");
   });
 }
+
+let modal = document.getElementById("login");
+let btn = document.getElementById("myBtn");
+let span = document.getElementsByClassName("close")[0];
+
+let modal2 = document.getElementById("fast-order");
+let btn2 = document.getElementById("btnFastOrder");
+let span2 = document.getElementsByClassName("close")[1];
+
+
+let btn3 = document.querySelectorAll(".btnQuestForm");
+let modal3 = document.getElementById("question-modal");
+let span3 = document.getElementsByClassName("close")[2];
+let btn4 = document.querySelectorAll(".revBtn");
+let modal4 = document.getElementById("review-modal");
+let span4 = document.getElementsByClassName("close")[3];
+
+
+let modalFunction =(modal2,btn2,span2)=>{
+  console.log(typeof btn2)
+    btn2.onclick = function () {
+      modal2.style.display = "block";
+    };
+
+span2.onclick = function () {
+  modal2.style.display = "none";
+};
+}
+let modalFunction2 =(modal3,btn3,span3)=>{
+
+    btn3.forEach((b) => {
+      b.onclick = function () {
+        modal3.style.display = "block";
+      };
+    });
+
+
+span3.onclick = function () {
+  modal3.style.display = "none";
+};
+}
+  window.onclick = function (event) {
+     if (event.target == modal) {
+       modal.style.display = "none";
+     }
+    if (event.target == modal2){
+      modal2.style.display = "none";
+    }
+     if (event.target == modal3) {
+       modal3.style.display = "none";
+     }
+     if (event.target == modal4) {
+       modal4.style.display = "none";
+     }
+  };
+
+
+
+modalFunction(modal, btn, span);
+modalFunction(modal2,btn2,span2);
+modalFunction2(modal3, btn3, span3);
+modalFunction2(modal4, btn4, span4);

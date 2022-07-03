@@ -9,7 +9,7 @@ cart.forEach((element) => {
     let c = element.parentNode;
     let el = c.querySelector(".pi-range");
     let jj = c.querySelector(".buttonCountVal");
-    //jj.value=1;
+    jj.value=1;
     el.classList.add('d-flex');
   };
 });;
@@ -44,7 +44,7 @@ buttonCountMinus.forEach((element) => {
     }
     if (+countPlus == 1) {
       c.classList.remove('d-flex');
-      //jj.value = 0;
+      jj.value = 0;
       let el = pc.querySelector(".pi-cart");
       el.classList.remove("d-none");
     }

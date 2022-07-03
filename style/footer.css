@@ -24,7 +24,9 @@
     line-height: 18px;
     color: #333333;
 }
-
+.accordion__body-item-content a{
+    color: #333333;
+}
 .accordion__body-item-content>*:not(:last-child) {
     margin-bottom: 12px;
 }
