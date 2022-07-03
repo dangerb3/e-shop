@@ -369,8 +369,8 @@
   cursor: pointer;
 }
 .pi-fastorder:hover {
-  color: #333333;
-  border-color: #333333;
+  color: #bd0f2c;
+  border-color: #bd0f2c;
 }
 .shop-header {
   display: flex;
@@ -852,7 +852,10 @@
 }
 
 .descrip .pi-color {
+    grid-column: 3 / 4;
+    width: 39%;
 }
+
 
 .val-width {
   width: 205px;
@@ -1151,7 +1154,7 @@
   background-color: #bd0f2c;
 }
 .val-width2 {
-  width: 100%;
+  width: 85%;
 }
 .product-tab {
   padding-bottom: 40px;
