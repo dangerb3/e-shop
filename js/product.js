@@ -27,7 +27,7 @@ const swiper2 = new Swiper(".product-swiper", {
 function myFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+  var btnText = document.getElementById("myBtn2");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
@@ -214,6 +214,20 @@ span3.onclick = function () {
      if (event.target == modal4) {
        modal4.style.display = "none";
      }
+      if (
+        !event.target.matches(".dropdown-btn") &&
+        !event.target.matches(".breadcrumb-list__link2")
+      ) {
+        console.log("hhhhh");
+        var dropdowns = document.getElementsByClassName("dropdown-container2");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains("active")) {
+            openDropdown.classList.remove("active");
+          }
+        }
+      }
   };
 
 
@@ -222,3 +236,33 @@ modalFunction(modal, btn, span);
 modalFunction(modal2,btn2,span2);
 modalFunction2(modal3, btn3, span3);
 modalFunction2(modal4, btn4, span4);
+
+var favClick = document.querySelectorAll(".fav-icon");
+favClick.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.preventDefault();
+    var favItem = item.querySelector("path");
+    favItem.classList.toggle("icon-clicked");
+  });
+});
+
+var rankClick = document.querySelectorAll(".rank-icon");
+rankClick.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.preventDefault();
+    var rankDetails = item.querySelectorAll("path");
+    rankDetails.forEach((elem) => {
+      elem.classList.toggle("rank-clicked");
+    });
+  });
+});
+var rankClick = document.querySelectorAll(".share-icon");
+rankClick.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.preventDefault();
+    var rankDetails = item.querySelectorAll("path");
+    rankDetails.forEach((elem) => {
+      elem.classList.toggle("share-clicked");
+    });
+  });
+});

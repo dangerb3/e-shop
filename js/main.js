@@ -1,3 +1,23 @@
+var favClick = document.querySelectorAll(".fav-icon");
+favClick.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.preventDefault();
+    var favItem = item.querySelector("path");
+    favItem.classList.toggle("icon-clicked");
+  });
+});
+
+var rankClick = document.querySelectorAll(".rank-icon");
+rankClick.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.preventDefault();
+    var rankDetails = item.querySelectorAll("path");
+    rankDetails.forEach((elem) => {
+      elem.classList.toggle("rank-clicked");
+    });
+  });
+});
+
 const swiper = new Swiper(".catalog-swiper", {
   // Optional parameters
   direction: "horizontal",
@@ -56,9 +76,6 @@ const swiper3 = new Swiper(".hero2-swiper", {
   slidesPerView: 5,
   watchOverflow: true,
   spaceBetween: 20,
-  autoplay: {
-    delay: 5000,
-  },
 });
 const swiper4 = new Swiper(".sales-swiper", {
   // Optional parameters

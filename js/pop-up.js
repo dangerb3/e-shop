@@ -21,4 +21,18 @@ window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+    if (
+      !event.target.matches(".dropdown-btn") &&
+      !event.target.matches(".breadcrumb-list__link2")
+    ) {
+      console.log("hhhhh");
+      var dropdowns = document.getElementsByClassName("dropdown-container2");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains("active")) {
+          openDropdown.classList.remove("active");
+        }
+      }
+    }
 };

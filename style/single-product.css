@@ -100,7 +100,7 @@
 }
 
 .pr-info {
-  width: 26%;
+  width: 27%;
   display: flex;
   flex-direction: column;
 }
@@ -173,11 +173,11 @@
 }
 
 .color-text {
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 16px;
-  letter-spacing: 0.2px;
-  color: #333333;
+  font-weight: 500 !important;
+  font-size: 11px !important;
+  line-height: 16px !important;
+  letter-spacing: 0.2px !important;
+  color: #333333 !important;
 }
 
 .char-item {
@@ -243,7 +243,7 @@
   margin-top: 20px;
 }
 
-#myBtn {
+#myBtn2 {
   border: none;
   background-color: #fff;
   font-weight: 400;
@@ -319,6 +319,7 @@
   border-radius: 50%;
   color: #333333;
   cursor: pointer;
+    margin-left: -3px;
 }
 
 .buttonCountPlus1 {
@@ -369,8 +370,8 @@
   cursor: pointer;
 }
 .pi-fastorder:hover {
-  color: #bd0f2c;
-  border-color: #bd0f2c;
+  color: #6b6b6b;
+  border-color: #6b6b6b;
 }
 .shop-header {
   display: flex;
@@ -432,17 +433,24 @@
   font-weight: 500;
   font-size: 9px;
   line-height: 14px;
-  color: #333333;
+  color: #333333 !important;
   white-space: nowrap;
 }
-
+.pi-found-more:hover>.bonus-text{
+  color: #6B6B6B !important;
+}
+.pi-found-more:hover>.fa {
+  color: #6B6B6B;
+}
 .shop-footer {
   background: #f5f5f6;
   border-radius: 10px;
   margin-top: 7px;
   padding: 20px;
 }
-
+.pi-found-more:hover>svg>path{
+  fill:#6B6B6B;
+}
 .pi-found-more {
   display: flex;
   align-items: center;
@@ -458,6 +466,7 @@
 .tab-swiper {
   width: 800px;
   margin-left: 0;
+  border-bottom: 1px solid #F3F3F3;
 }
 
 .tab-item {
@@ -1105,18 +1114,40 @@
   font-size: 20px;
   line-height: 20px;
   /* identical to box height, or 100% */
-
+  margin-left: 10px;
   color: #333333;
   margin-bottom: 20px;
 }
 
 .delivery-description {
   margin-bottom: 5px;
-}
+  margin-left: 10px;
+  font-weight: 400;
+font-size: 14px;
+line-height: 20px;
 
+letter-spacing: 0.2px;
+
+color: #333333;
+}
+.delivery-description2{
+    font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+
+letter-spacing: 0.2px;
+  margin-bottom: 5px;
+color: #333333;
+}
 .delivery > ul > li,
 .payment > ul > li {
   margin-bottom: 5px;
+  font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.2px;
+color: #333333;
 }
 
 .delivery > ul > li {
@@ -1141,6 +1172,11 @@
 
 .delivery-description_pro > span {
   width: 483px;
+  font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.2px;
+color: #333333;
 }
 
 .warranty {
@@ -1155,6 +1191,11 @@
 }
 .val-width2 {
   width: 85%;
+  font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #333333;
 }
 .product-tab {
   padding-bottom: 40px;
@@ -1413,4 +1454,48 @@ line-height: 12px;
 
 
 color: #8F9597;
+}
+.user-info-text-dark{
+  color: #6B6B6B;
+}
+.buttonCountPlus:hover {
+  background-color: #bd0f2c;
+  border: 0.5px solid #bd0f2c;
+}
+.pi-fav:hover svg {
+    stroke: #878792;
+}
+
+.pi-like:hover svg {
+    fill: #878792;
+}
+.pi-share:hover path{
+    stroke: #878792;
+}
+.pi-fav svg {
+    fill: none;
+    stroke: #b5b5b9;
+}
+.pi-like svg {
+    fill: #b5b5b9;
+}
+.share-clicked{
+  stroke: #e41434;
+}
+.first-tab-pane{
+  padding-top: 0;
+}
+.product-swiper .swiper-button-prev:hover:after, .product-swiper .swiper-button-next:hover:after{
+      color: #6b6b6b;
+}
+.mini-product-img.swiper-slide-thumb-active:hover {
+
+    border: 1px solid #6b6b6b;
+}
+#myBtn2:hover{
+  color: #333333
+}
+.buttonCountPlus1:hover {
+    background-color: #bd0f2c;
+    border: 0.5px solid #bd0f2c;
 }

@@ -1,4 +1,4 @@
-.catalog{
+.catalog {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -26,15 +26,14 @@
   height: 422px;
   background: #fff;
 }
-.catalog-img{
+.catalog-img {
   height: 150px;
   width: 100%;
   margin-bottom: 12px;
   border-radius: 10px;
   overflow: hidden;
 }
-.catalog__img{
+.catalog__img {
   height: 100%;
   width: 100%;
-
 }
